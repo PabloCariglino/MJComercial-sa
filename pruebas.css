@@ -1,0 +1,32 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #000000 !important;
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  /* Estilo para los elementos del menú */
+  .navbar-nav .nav-item .nav-link {
+    color: rgb(0, 0, 0);
+    /* Cambia "tuColor" al color de texto deseado */
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  /* Establece el estilo para el navbar cuando haces scroll */
+  .navbar-dark-on-scroll .navbar {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    /* Letras negras al hacer scroll */
+  }
+  
+  /* Estilo para las letras del menú al hacer scroll */
+  .navbar-dark-on-scroll .navbar-light .navbar-nav .nav-link {
+    color: #000000 !important;
+  }
+  
+  .navbar-transparent {
+    background-color: transparent !important;
+    color: rgb(0, 0, 0) !important;
+    /* Letras blancas en estado inicial */
+  }
+  

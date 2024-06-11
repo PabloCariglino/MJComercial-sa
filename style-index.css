@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+/* Estilos para los párrafos del carousel */
+ p {
+  font-size: 1.5rem;
+}
+
+/**************************************** ESTILOS PARA EL NAVBAR ***************************************/
+
+.navbar {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  /* Letras blancas en estado inicial */
+  /* font-family: CeraPro, sans-serif; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
+  font-size: 1.2vw;
+  padding: 4px;
+}
+
+.navbar-brand{
+  padding-left: 14px;
+}
+
+.navbar-nav li{
+  padding-right: 11px;
+  
+}
+
+.navbar-nav a{
+  color: black;
+  
+}
+
+/* Estilo para el enlace activo */
+.navbar-nav .nav-item .nav-link.active {
+  color: #ffffff !important;
+  /* Cambia "otroColor" al color deseado para el enlace activo */
+}
+
+/* Estilo para el botón de alternancia en dispositivos móviles */
+.navbar-toggler-icon {
+  background-color: transparent;
+  /* Cambia "colorBoton" al color deseado para el botón de alternancia */
+}
+
+/********************************************* ESTILO PARA EL CAROUSEL ***************************************/
+
+#carouselExampleFade {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-item img {
+  flex: auto;
+  width: auto;
+  height: 100vh;
+  /*Ajusta al total de la Ventana en todos los dispositivos*/
+  max-width: 100%;
+  max-height: 100%;
+  /*Ajusta la altura automáticamente para mantener la proporción*/
+  object-fit: cover;
+  /* Mantiene la relación de aspecto y cubre el contenedor*/
+}
+
+.carousel-caption img {
+  /*LOGO EN IMAGEN AL LADO DEL PARRAFO*/
+  max-width: 24vh;
+  /* La imagen se adapta al ancho del contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  position: absolute;
+  bottom: -48%;
+  /* Alinea la parte inferior del logo */
+  right: 0%;
+  /* Alinea la parte derecha del logo */
+}
+
+.carousel-caption {
+  bottom: 30%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  pointer-events: none;
+}
+
+.carousel-caption h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  text-shadow: 0 0 9px rgba(0, 0, 0, 9);
+  font-weight: bold;
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.carousel-caption p {
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  text-align: center;
+  text-shadow: 0 0 9px rgba(0, 0, 0, 9);
+  letter-spacing: 0.5px; /* Espaciado entre letras */
+}
+
+/************************************** Reglas de medios para hacer estilos más responsivos ****************************/
+@media (max-width: 767px) {
+  html * {
+    font-size: 1rem;
+    flex-direction: column;
+    /* Ajusta el tamaño del texto en pantallas más pequeñas */
+  }
+
+  .carousel-caption img {
+    max-width: 50%;
+    flex-direction: column;
+    /* Ajusta el tamaño del logo en pantallas más pequeñas */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+    flex-direction: column;
+    /* Ajusta el tamaño del texto en pantallas más pequeñas */
+  }
+
+  .nosotros-section-right {
+    width: 100%;
+  }
+}
+
+/******************************************** SECCION NOSOTROS ***************************************/
+
+.nosotros-section {
+  display: flex;
+  font-family: CeraPro, sans-serif;
+  padding: 0px 40px;
+  margin-top: 85px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros-section-left {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.nosotros-section-left img {
+  width: 100%;
+  height: auto;
+  /* Ajusta la altura automáticamente para mantener la proporción */
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.nosotros-section-right {
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centra verticalmente */
+  align-items: center;
+  /* Centra horizontalmente */
+  width: 100%;
+  height: auto;
+  text-align: center;
+  
+}
+
+.nosotros-section-right h3 {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 5px;
+}
+
+.nosotros-section-right p {
+  margin-bottom: 10px;
+  padding: 15px 5px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.button {
+  background-color: #c0261c;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+  /* Agrega una transición suave al color de fondo */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
+}
+
+.button:hover {
+  background-color: darkred;
+  /* Cambia el color de fondo al pasar el puntero */
+}
+
+.container-datos-magnitud {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 10px 30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+
+}
+
+/* Estilo de cada tarjeta */
+.tarjeta-datos-magnitud {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 180px;
+  margin: 20px;
+  padding: 7px 0px;
+  box-sizing: border-box;
+  border: 1px solid #fdfdfd3d;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta-datos-magnitud p{
+  font-size: 15px;
+  font-weight: 600;
+  
+}
+
+.tarjeta-datos-magnitud span {
+  color: #c0261c;
+}
+
+/********************************************** SECCION SERVICIOS *********************************************/
+
+.servicios{
+  background-color: rgba(235, 235, 235, 0.788);
+  margin-bottom: 20px;
+}
+
+.separador-servicios {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+ 
+}
+
+/* Estilos para la sección de iconos */
+.iconos-servicios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 14rem; /* Establece un ancho consistente para todas las tarjetas */
+  height: 14rem; /* Establece un alto consistente para todas las tarjetas */
+  margin: 12px; /* Añade separación entre las tarjetas */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Añade un ligero zoom al pasar el ratón */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%; /* Hace que la imagen ocupe todo el contenedor de la tarjeta */
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción y cubra el área */
+  transition: transform 0.4s ease;
+}
+
+.card p {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1.6rem; /* Ajusta según sea necesario */
+  transition: transform 0.3s ease;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1); /* Hace zoom en la imagen al pasar el ratón */
+}
+
+.card:hover p {
+  transform: translateX(-50%) translateY(-10px); /* Mueve el texto un poco hacia arriba al pasar el ratón */
+}
+
+
+
+
+
+/* Estilos para centrar el botón */
+.section-button-servicios {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.section-button-servicios a {
+  display: inline-block;
+  /* Hace que el botón sea un elemento en línea para centrarlo */
+}
+
+/********************************************** SECCION CLIENTES LOGOS*********************************************/
+.ventas-section h2 {
+  text-align: center;
+  /* Ajusta el espaciado superior e inferior según tus preferencias */
+  font-size: 30px;
+  /* Ajusta el tamaño de la fuente según tus preferencias */
+  font-weight: bold;
+  /* Establece la negrita */
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: rgba(235, 235, 235, 0.788);
+}
+
+.slider {
+  height: auto;
+  margin: auto;
+  width: 80vw;
+  overflow: hidden;
+  padding: 80px;
+  /* Ajusta el padding según tus necesidades */
+}
+
+.slider .slider-track {
+  display: flex;
+  animation: infinite 10s linear infinite;
+  /*-webkit-animation: infinite 10s linear infinite;*/
+  width: calc(180px * 18);
+  transition: transform 1s ease-in-out;
+  /* Agrega una transición suave al reinicio */
+}
+
+.slider .slider-track .slide {
+  width: 200px;
+  padding: 20px;
+}
+
+.slider .slider-track .slide img {
+  max-width: 100%;
+  height: auto;
+  /*margin-left: 5px;
+  margin-right: 5px;*/
+}
+
+@keyframes infinite {
+  0% {
+    /*-webkit-transform: translateX(0);*/
+    transform: translateX(0);
+  }
+
+  100% {
+    /*-webkit-transform: translateX(calc(-100px*13));*/
+    transform: translateX(calc(-100px*13));
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .slider .slider-track {
+    flex-direction: row;
+    /* Cambia la dirección a fila en dispositivos móviles */
+    width: calc(200px * 12);
+    /* Ajusta el ancho de la pista para dispositivos móviles */
+  }
+}
+
+/********************************************** SECCION UBICACION *********************************************/
+
+.ubicacion-puntosFronterizos {
+  display: flex;
+  font-family: CeraPro, sans-serif;
+  font-size: 17px;
+  overflow: hidden;
+}
+
+/* Estilos para la parte izquierda (mapa) */
+.ubicacion-puntosFronterizos .ubicacion-left {
+  width: 50%;
+  height: auto;
+  order: 1;
+}
+
+.ubicacion-puntosFronterizos .ubicacion-left iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Estilos para la parte derecha (imagen) */
+.ubicacion-puntosFronterizos .ubicacion-right {
+  max-width: 50%;
+  max-height: 100%;
+  order: 2;
+}
+
+.ubicacion-right .zoomable-image-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ubicacion-right img.zoomable-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ubicacion-right .view-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ubicacion-right .zoomable-image-container:hover .view-button {
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-content {
+  text-align: center;
+  position: relative;
+  /* Agrega posición relativa al contenido */
+}
+
+.full-image {
+  width: 100%;
+  height: 97vh;
+  object-fit: cover;
+}
+
+.close-overlay {
+  font-family: CeraPro, sans-serif;
+  background: none;
+  border: none;
+  color: rgba(235, 1, 1, 0.856);
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-style: oblique;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border-radius: 7%;
+}
+
+.ubicacion-puntosFronterizos .ubicacion-right:hover {
+  transform: scale(1.06);
+  transition: 0.7s;
+}
+
+
+/* Reglas de medios para hacerlo responsive */
+@media screen and (max-width: 768px) {
+  .ubicacion-puntosFronterizos {
+    flex-direction: column;
+  }
+
+  .ubicacion-puntosFronterizos .ubicacion-left,
+  .ubicacion-puntosFronterizos .ubicacion-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .full-image {
+    padding: 15px;
+    /* Agrega un poco de espacio alrededor de la imagen en pantallas más pequeñas */
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+  }
+}
+
+/********************************************** SECCION FOOTER *********************************************/
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px 10vw;
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: #fff;
+
+}
+
+.footer-section p{
+  font-size: 14px;
+}
+
+.footer-contacto-admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  /* Centra verticalmente */
+  width: 100%;
+  height: auto;
+  align-items: right;
+  text-align: right;
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  order: 2;
+  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+  width: 50%;
+  max-width: 400px;
+  margin-bottom: 1px;
+  margin: 2px;
+}
+
+.footer-contacto-planta {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* Centra verticalmente */
+  align-items: left;
+  /* Centra horizontalmente */
+  width: 100%;
+  height: auto;
+  text-align: left;
+  /* Alinea el texto al centro */
+  text-align: left;
+  order: 1;
+  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  width: 50%;
+  max-width: 400px;
+  margin-bottom: 1px;
+  margin-right: 1px;
+}
+
+.footer-creds {
+  text-align: center;
+  padding: 4px 10px;
+  font-size: 14px;
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: #fff;
+  /* Texto blanco */
+}
+
+.footer-creds img {
+  height: 8vh;
+  width: 12vh;
+}
+
+.footer-creds p{
+  font-size: 14px;
+}
+
+/* Media query para hacer responsive */
+@media screen and (max-width: 425px) {
+
+  .footer-section {
+      flex-direction: column;
+      /* Cambia a disposición de columna en pantallas pequeñas */
+      text-align: center;
+      /* Centra el contenido en pantallas pequeñas */
+  }
+
+
+  .footer-contacto-admin {
+      width: 100%;
+
+  }
+
+  .footer-contacto-planta {
+      width: 100%;
+
+  }
+
+  .footer-creds {
+      width: 100%;
+  }
+
+  .footer-contacto-planta,
+  .footer-contacto-admin {
+      margin-bottom: 20px;
+      /* Espaciado entre secciones en pantallas pequeñas */
+  }
+}
+
+
+
