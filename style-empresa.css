@@ -2,74 +2,69 @@
 
 /*--------------------------------------------------VISTA EMPRESA----------------------------------------------------*/
 html * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /**************************************** ESTILOS PARA EL NAVBAR ***************************************/
 .navbar {
-    background-color: transparent !important;
-    color: #ffffff !important;
-    /* Letras blancas en estado inicial */
-    /* font-family: CeraPro, sans-serif; */
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    transition: background-color 0.5s ease-in-out;
-    font-size: 1.2vw;
-    padding: 4px;
-  }
+  background-color: transparent !important;
+  color: #ffffff !important;
+  /* Letras blancas en estado inicial */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
+  font-size: 1.2vw;
+  padding: 4px;
+}
   
-  .navbar-brand{
-    padding-left: 14px;
-  }
+.navbar-brand{
+  padding-left: 14px;
+}
   
-  .navbar-nav li{
-    padding-right: 11px;
-    
-  }
+.navbar-nav li{
+  padding-right: 11px;  
+}
   
-  .navbar-nav a{
-    color: black;
-    
-  }
+.navbar-nav a{
+  color: black;    
+}
+
+/* Estilo para el enlace activo */
+.navbar-nav .nav-item .nav-link.active {
+  color: #ffffff !important;
+  /* Cambia "otroColor" al color deseado para el enlace activo */
+}
   
-  /* Estilo para el enlace activo */
-  .navbar-nav .nav-item .nav-link.active {
-    color: #ffffff !important;
-    /* Cambia "otroColor" al color deseado para el enlace activo */
-  }
-  
-  /* Estilo para el botón de alternancia en dispositivos móviles */
-  .navbar-toggler-icon {
-    background-color: transparent;
-    /* Cambia "colorBoton" al color deseado para el botón de alternancia */
-  }
+/* Estilo para el botón de alternancia en dispositivos móviles */
+.navbar-toggler-icon {
+  background-color: transparent;
+  /* Cambia "colorBoton" al color deseado para el botón de alternancia */
+}
 
 /*-----------------------------------------BANNER PLANTA----------------------------------------------*/
 .banner-planta {
-    flex: auto;
-    width: auto;
-    /*height: 47vw;*/
-    height: auto;
-    /*Ajusta al total de la Ventana en todos los dispositivos*/
-    max-width: 100%;
-    /*Ajusta el ancho máximo según tus necesidades */
-    max-height: 100%;
-    /*Ajusta la altura automáticamente para mantener la proporción*/
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-    overflow: hidden;
-    /* Para asegurar que la imagen no sobresalga del contenedor */
-    position: relative;
+  flex: auto;
+  width: auto;
+  /*height: 47vw;*/
+  height: auto;
+  max-width: 100%;
+  /*Ajusta el ancho máximo según tus necesidades */
+  max-height: 100%;
+  /*Ajusta la altura automáticamente para mantener la proporción*/
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  /* Para asegurar que la imagen no sobresalga del contenedor */
+  position: relative;
 }
 
 /* Asegurar que la imagen ocupe todo el contenedor */
 .banner-planta img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Hacer que la imagen sea responsive */
@@ -89,244 +84,249 @@ html * {
 
 /*-----------------------------------------PRESENTACION DATOS----------------------------------------------*/
 .presentacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-    padding-top: 100px;
-  }
-  
-  .presentacion-datos {
-    width: 50%;
-    text-align: justify;
-  }
-  
-  .presentacion-datos h2 {
-    margin-bottom: 12px;
-    font-size: 20px;
-    font-weight: 900;
-  }
-  
-  .presentacion-datos p{
-    padding-right: 41px;
-    font-weight: 450;
-    padding-bottom: 10px;
-  }
-
-  .carousel {
-    width: 40%;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
-  }
-  
-  .carousel-inner img {
-    width: 100%;
-    height: 350px; 
-    object-fit: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 100px;
 }
+  
+.presentacion-datos {
+  width: 50%;
+  text-align: justify;
+}
+  
+.presentacion-datos h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 900;
+}
+  
+.presentacion-datos p{
+  padding-right: 41px;
+  font-weight: 450;
+  padding-bottom: 10px;
+}
+
+.carousel {
+  width: 40%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
+}
+  
+.carousel-inner img {
+  width: 100%;
+  height: 350px; 
+  object-fit: cover; 
+}
+
 .container-datos-magnitud {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
-    padding-bottom: 60px;
-    padding-top: 10px;
-    pointer-events: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  padding-bottom: 60px;
+  padding-top: 10px;
+  pointer-events: none;
 }
 
 /* Estilo de cada tarjeta */
- .tarjeta-datos-magnitud {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 190px;
-    margin: 10px;
-    padding: 5px 5px;
-    border: 1px solid #fdfdfd3d;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
-    font-weight: 700;
+.tarjeta-datos-magnitud {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 190px;
+  margin: 10px;
+  padding: 5px 5px;
+  border: 1px solid #fdfdfd3d;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
+  font-weight: 700;
  }
 
- .tarjeta-datos-magnitud span {
-    color: #c0261c;
+.tarjeta-datos-magnitud span {
+  color: #c0261c;
 }
 
 /*-----------------------------------------INFO EMPRESA----------------------------------------------*/
 .info-empresa-cartas {
-    position: relative;
-    height: 65vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  position: relative;
+  height: 65vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
 }
 
 #background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
 }
 
 .cards-container {
-    display: flex;
-    align-items: center;
-    text-align: center;   
-    z-index: 1;
-    pointer-events: none;
+  display: flex;
+  align-items: center;
+  text-align: center;   
+  z-index: 1;
+  pointer-events: none;
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    margin: 10px;
-    padding: 12px; 
-    max-width: 300px; 
-    width: 75%; 
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 12px; 
+  max-width: 300px; 
+  width: 75%; 
 }
 
 .card-body {
-    padding: 10px; /* Ajustado para mantener proporción */
+  padding: 10px; /* Ajustado para mantener proporción */
 }
 
 .card-title {
-    font-size: 1.2em; /* Reducido de 1.5em */
-    margin-bottom: 10px;
-    color: white;
+  font-size: 1.2em; /* Reducido de 1.5em */
+  margin-bottom: 10px;
+  color: white;
 }
 
 .card-text {
-    font-size: 0.9em; /* Reducido de 1em */
-    color: white;
+  font-size: 0.9em; /* Reducido de 1em */
+  color: white;
 }
 
 /*------------------------------------------INFO EQUIPO---------------------------------------------------*/
 .info-equipo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 70px 100px;
-    font-family: sans-serif;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 70px 100px;
+  font-family: sans-serif;
+}
   
-  .img-trabajadores img {
-    max-width: 100%;
-    height: 390px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
-  }
-  
-  .info-equipo-parrafo {
-    margin-top: 25px;
-    width: 100%;
-    font-size: 16px;
-  }
+.img-trabajadores img {
+  max-width: 100%;
+  height: 390px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.info-equipo-parrafo {
+  margin-top: 25px;
+  width: 100%;
+  font-size: 16px;
+}
   
   
 /*------------------------------------------SLIDE FOTOS ANTIGUAS EQUIPO---------------------------------------------*/
 
 .separador-historia {
-    text-align: center;
-    padding: 25px 50px;
-    /* Ajusta el espaciado superior e inferior según tus preferencias */
-    font-size: 30%;
-    font-weight: bold;
-    font-family: 'Bebas Neue', sans-serif;
-    background-color: rgba(235, 235, 235, 0.788);
+  text-align: center;
+  padding: 25px 50px;
+  /* Ajusta el espaciado superior e inferior según tus preferencias */
+  font-size: 30%;
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: rgba(235, 235, 235, 0.788);
 }
 
 #carouselExampleFade {
-    width: 100%; /* Puedes ajustar el ancho según sea necesario */
-    height: 50vh; /* Puedes ajustar la altura según sea necesario */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    object-fit: cover;
+  width: 100%; /* Puedes ajustar el ancho según sea necesario */
+  height: 50vh; /* Puedes ajustar la altura según sea necesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  object-fit: cover;
   }
 
 /********************************************** SECCION FOOTER *********************************************/
 .footer-section {
-    display: flex;
-    /*flex-wrap: wrap;*/
-    justify-content: space-between;
-    /*align-items: flex-start;*/
-    text-align: center;
-    padding: 30px 10vw;
-    font-size: 14px;
-    background-color: #333;
-    /* Fondo gris oscuro */
-    color: #fff;
-    /* Texto blanco */
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  /*align-items: flex-start;*/
+  text-align: center;
+  padding: 30px 10vw;
+  font-size: 14px;
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: #fff;
+  /* Texto blanco */
 }
 
 
 .footer-contacto-admin {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    /* Centra verticalmente */
-    width: 100%;
-    height: auto;
-    align-items: right;
-    text-align: right;
-    flex-wrap: wrap;
-    /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
-    order: 2;
-    /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
-    width: 50%;
-    max-width: 400px;
-    margin-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  /* Centra verticalmente */
+  width: 100%;
+  height: auto;
+  align-items: right;
+  text-align: right;
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  order: 2;
+  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+  width: 50%;
+  max-width: 400px;
+  margin-bottom: 1px;
 }
 
 .footer-contacto-planta {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    /* Centra verticalmente */
-    align-items: left;
-    /* Centra horizontalmente */
-    width: 100%;
-    height: auto;
-    text-align: left;
-    /* Alinea el texto al centro */
-    text-align: left;
-    order: 1;
-    /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
-    flex-wrap: wrap;
-    /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
-    width: 50%;
-    max-width: 400px;
-    margin-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* Centra verticalmente */
+  align-items: left;
+  /* Centra horizontalmente */
+  width: 100%;
+  height: auto;
+  text-align: left;
+  /* Alinea el texto al centro */
+  text-align: left;
+  order: 1;
+  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  width: 50%;
+  max-width: 400px;
+  margin-bottom: 1px;
 }
 
 .footer-creds {
-    text-align: center;
-    padding: 4px 10px;
-    font-size: 14px;
-    background-color: #333;
-    /* Fondo gris oscuro */
-    color: #fff;
-    /* Texto blanco */
+  text-align: center;
+  padding: 4px 10px;
+  font-size: 12px;
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: #fff;
+  /* Texto blanco */
 }
 
 .footer-creds img {
-    height: 8vh;
-    width: 12vh;
+  height: 7vh;
+  width: 11vh;
+}
+
+.footer-creds p{
+  font-size: 12px;
 }
 
 /* Media query para hacer responsive */
