@@ -104,6 +104,7 @@ html * {
 
 /* Estilos para la sección de iconos */
 .iconos-servicios {
+  padding-bottom: 90px;
   display: flex;
   justify-content: space-around;
   /* Distribuye los elementos uniformemente a lo largo del contenedor */
@@ -137,23 +138,102 @@ html * {
   font-size: 20px;
 }
 
+/************************************TARJETAS DE REDIRECCION A SERVICIOS*******************************************/
+.tarjetas-servicio-catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 30px;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 17rem;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 180px; /* Altura fija para todas las tarjetas */
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.tarjeta:hover{
+  box-shadow: 0 5 20px rgba(0, 0, 0, 4);
+  transform: translateY(-3%);
+}
+
+.tarjeta-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-title {
+  margin: 10px 0;
+  font-size: 19px;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+.tarjeta-text {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.btn-indice {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 5px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #c0261c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 5 5 20px rgba(0, 0, 0, 1);
+text-decoration: none;
+}
+
+.btn-indice:hover {
+  background-color: darkred;
+}
+
+@media (max-width: 768px) {
+  .tarjeta {
+      max-width: 100%;
+  }
+}
+
+
+
+
 /************************************* SECCION TARJETAS SERVICIOS VAGONES****************************************/
 .cards-vagones {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
- 
-  padding: 76px;
+  padding: 40px;
   /* Ajusta el espaciado según sea necesario */
 }
 
 /* Estilo para cada tarjeta */
 .card {
   width: 100%;
-  /* Ocupa hasta el 45% del contenedor principal */
-margin-bottom: 45px;
-  
-  
+  margin-bottom: 45px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: default;
@@ -168,7 +248,7 @@ margin-bottom: 45px;
 /* Estilo para las imágenes en las tarjetas */
 .card img {
   max-width: 100%;
-  height: 200px; /* Ajusta la altura según sea necesario */
+  height: 160px; /* Ajusta la altura según sea necesario */
   object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
 }
 
@@ -185,10 +265,8 @@ margin-bottom: 45px;
   }
 }
 
-
-
 .btn {
-  background-color: rgba(219, 0, 0, 0.815);
+  background-color: #c0261c;
   color: white;
   padding: 4px 40px;
   text-decoration: none;
@@ -202,7 +280,6 @@ margin-bottom: 45px;
  position: absolute;
   bottom: 10px;
   /* Ajusta según sea necesario */
-
   transform: translateX(-50%);
 
 }
@@ -219,14 +296,10 @@ margin-bottom: 45px;
 
 .separador-repuestos {
   text-align: center;
-  padding: 30px 30px;
-  /* Ajusta el espaciado superior e inferior según tus preferencias */
+  padding: 20px 0px;
   font-size: 30%;
   /* Ajusta el tamaño de la fuente según tus preferencias */
   font-weight: bold;
-  /* Establece la negrita */
-  text-decoration: underline;
-  /* Subraya el texto */
   font-family: 'Bebas Neue', sans-serif;
   background-color: rgb(235, 235, 235);
   max-width: 100%;
@@ -250,6 +323,26 @@ margin-bottom: 45px;
   display: inline-block; /* Alinea la imagen correctamente */
 }
 
+/************************************* SECCION TARJETAS FABRICACION MODULOS**************************************/
+
+.separador-modulos {
+  text-align: center;
+  padding: 10px 30px;
+  padding-top: 30px;
+  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: rgb(235, 235, 235);
+  max-width: 100%;
+  /* Ajusta el ancho máximo según tus necesidades */
+  max-height: auto;
+  /* Ajusta la altura automáticamente para mantener la proporción */
+  object-fit: cover;
+  /* Mantiene la relación de aspecto y cubre el contenedor */
+}
+
+
+
+/************************************* SECCION banner planta puerta****************************************/
 .banner-planta-puerta {
   flex: auto;
   width: auto;
