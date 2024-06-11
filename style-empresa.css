@@ -249,18 +249,15 @@ html * {
     background-color: rgba(235, 235, 235, 0.788);
 }
 
-#carouselExampleFade img {
+#carouselExampleFade {
+    width: 100%; /* Puedes ajustar el ancho según sea necesario */
+    height: 50vh; /* Puedes ajustar la altura según sea necesario */
     display: flex;
-    width: 100vh;
-    height: 65vh;
-    max-width: 100%;
-    /* max-height: 15%; */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     object-fit: cover;
-}
-
-.img-slide-antiguo {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+  }
 
 /********************************************** SECCION FOOTER *********************************************/
 .footer-section {
