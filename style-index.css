@@ -108,31 +108,6 @@ h2 {
   letter-spacing: 0.5px; /* Espaciado entre letras */
 }
 
-/************************************** Reglas de medios para hacer estilos más responsivos ****************************/
-@media (max-width: 767px) {
-  html * {
-    font-size: 1rem;
-    flex-direction: column;
-    /* Ajusta el tamaño del texto en pantallas más pequeñas */
-  }
-
-  .carousel-caption img {
-    max-width: 50%;
-    flex-direction: column;
-    /* Ajusta el tamaño del logo en pantallas más pequeñas */
-  }
-
-  .carousel-caption p {
-    font-size: 1rem;
-    flex-direction: column;
-    /* Ajusta el tamaño del texto en pantallas más pequeñas */
-  }
-
-  .nosotros-section-right {
-    width: 100%;
-  }
-}
-
 /******************************************** SECCION NOSOTROS ***************************************/
 
 .nosotros-section {
@@ -148,6 +123,7 @@ h2 {
   width: 100%;
   height: 100%;
   align-items: center;
+  padding-left: 5px;
 }
 
 .nosotros-section-left img {
@@ -159,7 +135,9 @@ h2 {
 }
 
 .nosotros-section-right {
-  padding: 0px 50px;
+  padding: 0px 60px;
+  padding-left: 10px;
+  padding-right: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -314,10 +292,6 @@ h2 {
   transform: translateX(-50%) translateY(-10px); /* Mueve el texto un poco hacia arriba al pasar el ratón */
 }
 
-
-
-
-
 /* Estilos para centrar el botón */
 .section-button-servicios {
   text-align: center;
@@ -333,13 +307,12 @@ h2 {
 /********************************************** SECCION CLIENTES LOGOS*********************************************/
 .ventas-section h2 {
   text-align: center;
-  /* Ajusta el espaciado superior e inferior según tus preferencias */
   font-size: 30px;
-  /* Ajusta el tamaño de la fuente según tus preferencias */
   font-weight: bold;
-  /* Establece la negrita */
+  padding-top: 70px;
+  padding-bottom: 5px;
   font-family: 'Bebas Neue', sans-serif;
-  background-color: rgba(235, 235, 235, 0.788);
+  /* background-color: rgba(235, 235, 235, 0.788); */
 }
 
 .slider {
@@ -347,8 +320,7 @@ h2 {
   margin: auto;
   width: 80vw;
   overflow: hidden;
-  padding: 80px;
-  /* Ajusta el padding según tus necesidades */
+  padding-bottom: 70px;
 }
 
 .slider .slider-track {
@@ -498,8 +470,6 @@ h2 {
   transition: 0.7s;
 }
 
-
-/* Reglas de medios para hacerlo responsive */
 @media screen and (max-width: 768px) {
   .ubicacion-puntosFronterizos {
     flex-direction: column;
@@ -513,9 +483,8 @@ h2 {
 
   .full-image {
     padding: 15px;
-    /* Agrega un poco de espacio alrededor de la imagen en pantallas más pequeñas */
     width: 100%;
-    height: 90vh;
+    height: auto;
     object-fit: cover;
   }
 }
@@ -596,7 +565,6 @@ h2 {
   font-size: 12px;
 }
 
-/* Media query para hacer responsive */
 @media screen and (max-width: 425px) {
 
   .footer-section {
@@ -628,5 +596,79 @@ h2 {
   }
 }
 
+/************************************** Reglas de medios para hacer estilos más responsivos ****************************/
+@media (max-width: 991px) {
+  .navbar-nav li{
+    font-size: 15px;
+    padding-right: 0;
+   }
+  .iconos-servicios {
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+   }
+  .carousel-caption img {
+    /*LOGO EN IMAGEN AL LADO DEL PARRAFO*/
+    max-width: 20vh;
+    bottom: -80%;
+  }
+  .carousel-caption {
+    bottom: 40%;
+  }
+}
 
+@media (max-width: 768px) {
+  html * {
+    font-size: 1.1rem;
+  }
 
+ .navbar .container-fluid{
+  flex-direction: column;
+ } 
+ .navbar-nav a{
+  font-size: 18px;
+  text-align: center;
+ }
+ .navbar-nav li{
+  font-size: 18px;
+  text-align: center;
+  padding-right: 0;
+ }
+  .nosotros-section{
+    flex-direction: column;
+  }
+   
+  .nosotros-section-right {
+    width: 100%;
+    padding-top: 20px;
+    
+  }
+  .container-datos-magnitud{
+    flex-direction: column;
+  }
+  .tarjeta-datos-magnitud {
+    max-width: 300px;
+  }
+  .separador-servicios h2{
+    font-size: 2rem;
+    }
+  .iconos-servicios{
+    flex-wrap: wrap;
+  }
+  .card{
+    flex-direction: column;
+  }
+  .card p{
+    font-size: 1.2rem;
+  }
+  #info-contacto{
+    flex-direction: column;
+    align-items: center;  
+  }
+  .footer-contacto-admin{
+    order: 2;
+  }
+  .footer-contacto-planta{
+    order: 1;
+    padding-bottom: 20px;
+  }
+}
