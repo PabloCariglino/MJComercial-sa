@@ -4,7 +4,6 @@
 html * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /**************************************** ESTILOS PARA EL NAVBAR ***************************************/
@@ -92,7 +91,7 @@ html * {
 }
   
 .presentacion-datos {
-  width: 50%;
+  width: 420px;
   text-align: justify;
 }
   
@@ -106,16 +105,17 @@ html * {
   padding-right: 41px;
   font-weight: 450;
   padding-bottom: 10px;
+  font-size: 15px;
 }
 
 .carousel {
-  width: 40%;
+  width: 550px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
 }
   
 .carousel-inner img {
-  width: 100%;
-  height: 350px; 
+  width: 550px;
+  height: 325px; 
   object-fit: cover; 
 }
 
@@ -192,7 +192,7 @@ html * {
   margin: 10px;
   padding: 12px; 
   max-width: 300px; 
-  width: 75%; 
+  width: 290px; 
 }
 
 .card-body {
@@ -200,13 +200,13 @@ html * {
 }
 
 .card-title {
-  font-size: 1.2em; /* Reducido de 1.5em */
+  font-size: 17px;
   margin-bottom: 10px;
   color: white;
 }
 
 .card-text {
-  font-size: 0.9em; /* Reducido de 1em */
+  font-size: 14px;
   color: white;
 }
 
@@ -229,7 +229,7 @@ html * {
 .info-equipo-parrafo {
   margin-top: 25px;
   width: 100%;
-  font-size: 16px;
+  font-size: 15px;
 }
   
   
@@ -239,7 +239,7 @@ html * {
   text-align: center;
   padding: 25px 50px;
   /* Ajusta el espaciado superior e inferior según tus preferencias */
-  font-size: 30%;
+  font-size: 2rem;
   font-weight: bold;
   font-family: 'Bebas Neue', sans-serif;
   background-color: rgba(235, 235, 235, 0.788);
@@ -359,4 +359,149 @@ html * {
         margin-bottom: 20px;
         /* Espaciado entre secciones en pantallas pequeñas */
     }
+}
+
+/************************************** Reglas de medios para hacer estilos más responsivos ****************************/
+@media (max-width: 980px) {
+  .navbar-nav li{
+    font-size: 15px;
+    padding-right: 0;
+  }
+  .card {
+    max-width: 250px; 
+    width: 195px; 
+  }
+  .img-trabajadores img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+ .navbar .container-fluid{
+  flex-direction: column;
+ } 
+ .navbar-nav a{
+  font-size: 18px;
+  text-align: center;
+ }
+ .navbar-nav li{
+  font-size: 18px;
+  text-align: center;
+  padding-right: 0;
+ }
+  .presentacion{
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 60px;
+  }
+  .presentacion-datos{
+    order: 2;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .presentacion-datos p{
+    padding: 3px 10px;
+  }
+  #carouselExampleIndicators{
+    order: 1;
+  }
+  .carousel {
+   width: 70vh;
+  }
+  .carousel-inner img {
+    max-height: 50vh;
+  }
+  .card {
+    margin: 8px;
+    padding: 1px; 
+    max-width: 250px; 
+    width: 200px; 
+  }
+  
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .info-equipo{
+    padding: 70px 40px;
+  }
+  .img-trabajadores img {
+    max-width: 100%;
+    height: 240px;
+  }
+  #info-contacto{
+    flex-direction: column;
+    align-items: center;  
+  }
+  .footer-contacto-admin{
+    order: 2;
+  }
+  .footer-contacto-planta{
+    order: 1;
+    padding-bottom: 20px;
+  }
+  .tarjeta-datos-magnitud {
+    width: 100%;
+    max-width: 220px;
+   }
+}
+
+@media (max-width: 670px) {
+  .navbar-nav li{
+    font-size: 15px;
+    padding-right: 0;
+  }
+   .carousel {
+   width: 70vh;
+  }
+  .carousel-inner img {
+    max-height: 55vh;
+  }
+  /* Ocultar la tercera tarjeta en pantallas pequeñas */
+  .card:nth-child(1),
+  .card:nth-child(2) {
+    display: none;
+  }
+  .card {
+    max-width: 390px; 
+    width: 370px; 
+  }
+  .img-trabajadores img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 410px) {
+  .navbar-nav li{
+    font-size: 15px;
+    padding-right: 0;
+  }
+  .presentacion-datos{
+    padding-top: 30px;
+    padding: 33px;
+  }
+  .carousel {
+    width: 60vh;
+   }
+  .carousel-inner img {
+    max-height: 60vh;
+  }
+  /* Ocultar la tercera tarjeta en pantallas pequeñas */
+  .card:nth-child(1),
+  .card:nth-child(2) {
+    display: none;
+  }
+  .card {
+    max-width: 360px; 
+    width: 330px; 
+  }
+  .img-trabajadores img {
+    max-width: 100%;
+    height: 150px;
+  }
 }
