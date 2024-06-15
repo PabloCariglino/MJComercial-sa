@@ -3,7 +3,7 @@
 html * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /**************************************** ESTILOS PARA EL NAVBAR ***************************************/
@@ -11,26 +11,23 @@ html * {
   background-color: transparent !important;
   color: #ffffff !important;
   /* Letras blancas en estado inicial */
-  /* font-family: CeraPro, sans-serif; */
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   transition: background-color 0.5s ease-in-out;
   font-size: 1.2vw;
   padding: 4px;
 }
-
+  
 .navbar-brand{
   padding-left: 14px;
 }
-
+  
 .navbar-nav li{
-  padding-right: 11px;
-  
+  padding-right: 11px;  
 }
-
-.navbar-nav a{
-  color: black;
   
+.navbar-nav a{
+  color: black;    
 }
 
 /* Estilo para el enlace activo */
@@ -38,7 +35,7 @@ html * {
   color: #ffffff !important;
   /* Cambia "otroColor" al color deseado para el enlace activo */
 }
-
+  
 /* Estilo para el botón de alternancia en dispositivos móviles */
 .navbar-toggler-icon {
   background-color: transparent;
@@ -105,37 +102,29 @@ html * {
 
 /* Estilos para la sección de iconos */
 .iconos-servicios {
-  padding-bottom: 90px;
   display: flex;
   justify-content: space-around;
-  /* Distribuye los elementos uniformemente a lo largo del contenedor */
   align-items: center;
-  /* Centra verticalmente los elementos */
   padding: 10px 20%;
   flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  padding-bottom: 60px;
 }
 
 /* Estilos para cada ícono y texto */
 .iconos-servicios a {
   text-align: center;
   flex: 1;
-  /* Hace que cada ícono ocupe el mismo espacio en la fila */
   padding: 1px;
-  /* Añade un poco de espacio entre los íconos */
 }
 
 .iconos-servicios img {
   max-width: 70px;
-  /* Asegura que la imagen no se desborde del contenedor padre */
   height: 70px;
-  /* Mantiene la proporción de la imagen */
 }
 
 .iconos-servicios p {
   font-family: 'Bebas Neue', sans-serif;
   margin-top: 8px;
-  /* Añade espacio entre la imagen y el texto */
   font-size: 20px;
 }
 
@@ -213,22 +202,12 @@ text-decoration: none;
   background-color: darkred;
 }
 
-@media (max-width: 768px) {
-  .tarjeta {
-      max-width: 100%;
-  }
-}
-
-
-
-
 /************************************* SECCION TARJETAS SERVICIOS VAGONES****************************************/
 .cards-vagones {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 40px;
-  /* Ajusta el espaciado según sea necesario */
+  padding-top: 45px;
 }
 
 /* Estilo para cada tarjeta */
@@ -249,21 +228,8 @@ text-decoration: none;
 /* Estilo para las imágenes en las tarjetas */
 .card img {
   max-width: 100%;
-  height: 160px; /* Ajusta la altura según sea necesario */
+  height: 160px; 
   object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
-}
-
-/* Ajustar estilos para pantallas más pequeñas */
-@media (max-width: 767px) {
-  .card {
-    width: 100%;
-    /* Ocupa el 100% en pantallas más pequeñas */
-  }
-
-  .btn{
-    max-height: 5vh;
-    
-  }
 }
 
 .btn {
@@ -280,9 +246,7 @@ text-decoration: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
  position: absolute;
   bottom: 10px;
-  /* Ajusta según sea necesario */
   transform: translateX(-50%);
-
 }
 
 .btn:hover {
@@ -297,18 +261,15 @@ text-decoration: none;
 
 .separador-repuestos {
   text-align: center;
-  padding: 20px 0px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   font-size: 30%;
-  /* Ajusta el tamaño de la fuente según tus preferencias */
   font-weight: bold;
   font-family: 'Bebas Neue', sans-serif;
   background-color: rgb(235, 235, 235);
   max-width: 100%;
-  /* Ajusta el ancho máximo según tus necesidades */
   max-height: auto;
-  /* Ajusta la altura automáticamente para mantener la proporción */
   object-fit: cover;
-  /* Mantiene la relación de aspecto y cubre el contenedor */
 }
 
 /* Estilo para el contenedor de la imagen */
@@ -328,20 +289,15 @@ text-decoration: none;
 
 .separador-modulos {
   text-align: center;
-  padding: 10px 30px;
+  padding-bottom: 30px;
   padding-top: 30px;
   font-weight: bold;
   font-family: 'Bebas Neue', sans-serif;
   background-color: rgb(235, 235, 235);
   max-width: 100%;
-  /* Ajusta el ancho máximo según tus necesidades */
   max-height: auto;
-  /* Ajusta la altura automáticamente para mantener la proporción */
   object-fit: cover;
-  /* Mantiene la relación de aspecto y cubre el contenedor */
 }
-
-
 
 /************************************* SECCION banner planta puerta****************************************/
 .banner-planta-puerta {
@@ -351,12 +307,9 @@ text-decoration: none;
   height: 50vh;
   /*Ajusta al total de la Ventana en todos los dispositivos*/
   max-width: 100%;
-  /*Ajusta el ancho máximo según tus necesidades */
   max-height: 100%;
-  /*Ajusta la altura automáticamente para mantener la proporción*/
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
   overflow: hidden;
   /* Para asegurar que la imagen no sobresalga del contenedor */
   position: relative;
@@ -369,20 +322,6 @@ text-decoration: none;
   object-fit: cover;
 }
 
-
-
-/* Hacer que la imagen sea responsive */
-@media (max-width: 767px) {
-
-  /* Estilos para pantallas pequeñas */
-  .banner-planta-puerta {
-    height: auto;
-    /* Permitir que la altura sea automática en pantallas más pequeñas */
-  }
-
-  
-}
-
 /********************************************** SECCION FOOTER *********************************************/
 .footer-section {
   display: flex;
@@ -393,17 +332,13 @@ text-decoration: none;
   padding: 30px 10vw;
   font-size: 14px;
   background-color: #333;
-  /* Fondo gris oscuro */
   color: #fff;
-  /* Texto blanco */
 }
-
 
 .footer-contacto-admin {
   display: flex;
   flex-direction: column;
   justify-content: right;
-  /* Centra verticalmente */
   width: 100%;
   height: auto;
   align-items: right;
@@ -421,19 +356,14 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: left;
-  /* Centra verticalmente */
   align-items: left;
-  /* Centra horizontalmente */
   width: 100%;
   height: auto;
-  text-align: left;
-  /* Alinea el texto al centro */
   text-align: left;
   order: 1;
   /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
   flex-wrap: wrap;
   /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
-  width: 50%;
   max-width: 400px;
   margin-bottom: 1px;
 }
@@ -443,9 +373,7 @@ text-decoration: none;
   padding: 4px 10px;
   font-size: 12px;
   background-color: #333;
-  /* Fondo gris oscuro */
   color: #fff;
-  /* Texto blanco */
 }
 
 .footer-creds img {
@@ -459,7 +387,6 @@ text-decoration: none;
 
 /* Media query para hacer responsive */
 @media screen and (max-width: 425px) {
-
   .footer-section {
       flex-direction: column;
       /* Cambia a disposición de columna en pantallas pequeñas */
@@ -467,15 +394,12 @@ text-decoration: none;
       /* Centra el contenido en pantallas pequeñas */
   }
 
-
   .footer-contacto-admin {
       width: 100%;
-
   }
 
   .footer-contacto-planta {
       width: 100%;
-
   }
 
   .footer-creds {
@@ -486,5 +410,90 @@ text-decoration: none;
   .footer-contacto-admin {
       margin-bottom: 20px;
       /* Espaciado entre secciones en pantallas pequeñas */
+  }
+}
+
+/************************************** Reglas de medios para hacer estilos más responsivos ****************************/
+@media (max-width: 980px) {
+  .navbar-nav li{
+    font-size: 15px;
+    padding-right: 0;
+  }
+  .card {
+    max-width: 270px; 
+    height: auto;
+  }
+  .btn{
+    padding: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .container-fluid{
+   flex-direction: column;
+  } 
+  .navbar-nav a{
+   font-size: 18px;
+   text-align: center;
+  }
+  .navbar-nav li{
+   font-size: 18px;
+   text-align: center;
+   padding-right: 0;
+  }
+  .tarjetas-servicio-catalogo{
+    padding-bottom: 50px;
+  }
+  .tarjeta {
+   max-width: 100%;
+  } 
+  .card {
+   width: 100%;
+  /* Ocupa el 100% en pantallas más pequeñas */
+  }
+ .btn{
+   max-height: 35px;
+  }
+  .banner-planta-puerta {
+    height: auto;
+    /* Permitir que la altura sea automática en pantallas más pequeñas */
+  }
+  #info-contacto{
+    flex-direction: column;
+    align-items: center;  
+  }
+  .footer-contacto-admin{
+    order: 2;
+  }
+  .footer-contacto-planta{
+    order: 1;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 670px) {
+  .navbar-nav li{
+    font-size: 15px;
+    padding-right: 0;
+  }
+  .banner-servicios img{
+    max-height: 30vh;
+  }
+  .intro-desarrollo p{
+    display: none;
+  }
+  .card {
+    max-width: 390px; 
+    width: 370px; 
+  }
+}
+
+@media (max-width: 410px) {
+  .navbar-nav li{
+    font-size: 15px;
+    padding-right: 0;
+  }
+  .card {
+    max-width: 300px; 
   }
 }
