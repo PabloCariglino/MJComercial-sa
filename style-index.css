@@ -67,7 +67,7 @@ h2 {
   height: 100vh;
   /*Ajusta al total de la Ventana en todos los dispositivos*/
   max-width: 100%;
-  max-height: 100%;
+  /* max-height: 100%; */
   /*Ajusta la altura automáticamente para mantener la proporción*/
   object-fit: cover;
   /* Mantiene la relación de aspecto y cubre el contenedor*/
@@ -94,7 +94,7 @@ h2 {
 
 .carousel-caption h1 {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   text-shadow: 0 0 9px rgba(0, 0, 0, 9);
   font-weight: bold;
   letter-spacing: 1px; /* Espaciado entre letras */
@@ -102,7 +102,7 @@ h2 {
 
 .carousel-caption p {
   background: rgba(0, 0, 0, 0.6);
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
   text-shadow: 0 0 9px rgba(0, 0, 0, 9);
   letter-spacing: 0.5px; /* Espaciado entre letras */
@@ -613,6 +613,13 @@ h2 {
     max-width: 20vh;
     bottom: -80%;
   }
+  .carousel-caption h1 {
+    font-size: 25px; /* Ajusta el tamaño según tus necesidades */
+  }
+
+  .carousel-caption p {
+    font-size: 2vh; /* Ajusta el tamaño según tus necesidades */
+  }
   .carousel-caption {
     bottom: 40%;
   }
@@ -620,29 +627,46 @@ h2 {
 
 @media (max-width: 768px) {
   html * {
-    font-size: 1.1rem;
+   font-size: 1.1rem;
   }
-
- .navbar .container-fluid{
-  flex-direction: column;
- } 
- .navbar-nav a{
-  font-size: 18px;
-  text-align: center;
- }
+  .navbar .container-fluid{
+   flex-direction: column;
+  } 
+  .navbar-nav a{
+   font-size: 18px;
+   text-align: center;
+  }
  .navbar-nav li{
-  font-size: 18px;
-  text-align: center;
-  padding-right: 0;
- }
+   font-size: 18px;
+   text-align: center;
+   padding-right: 0;
+  }
+  .carousel-item img{
+    height: 100vh;
+  }
+  
+  .carousel-caption img {
+    /*LOGO EN IMAGEN AL LADO DEL PARRAFO*/
+    display: none;
+  }
+  .carousel-caption h1 {
+    font-size: 3vh; 
+    padding-top: 30px;
+  }
+  .carousel-caption p {
+    font-size: 2vh;
+    display: none;
+  }
+  .carousel-caption {
+    bottom: 40%;
+    display: block;
+  }
   .nosotros-section{
     flex-direction: column;
   }
-   
   .nosotros-section-right {
     width: 100%;
     padding-top: 20px;
-    
   }
   .container-datos-magnitud{
     flex-direction: column;

@@ -358,6 +358,8 @@ html * {
     .footer-contacto-admin {
         margin-bottom: 20px;
         /* Espaciado entre secciones en pantallas pequeñas */
+        text-align: center;
+        
     }
 }
 
@@ -483,14 +485,14 @@ html * {
   }
   .presentacion-datos{
     padding-top: 30px;
-    padding: 33px;
+    padding: 32px;
     max-width: 100%;
   }
   .carousel {
-    width: 53vh;
+    width: 37vh;
    }
   .carousel-inner img {
-    max-height: 50vh;
+    max-height: 49vh;
   }
   .info-empresa-cartas{
     max-width: 100%;
@@ -504,13 +506,23 @@ html * {
     display: none;
   }
   .card {
-    max-width: 310px; 
-    width: 285px; 
+    max-width: 290px; 
+    width: 215px; 
   }
   .info-equipo{
     padding: 70px 14px;
   }
   .img-trabajadores img {
     height: 150px;
+  }
+}
+
+@media (max-with: 320px){
+  .footer-contacto-planta,
+  .footer-contacto-admin {
+      align-items: center;
+      text-align: center;
+      align-content: center;
+      
   }
 }
