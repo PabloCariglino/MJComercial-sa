@@ -88,6 +88,7 @@ html * {
   align-items: center;
   padding-bottom: 20px;
   padding-top: 100px;
+  max-width: 100%;
 }
   
 .presentacion-datos {
@@ -109,13 +110,13 @@ html * {
 }
 
 .carousel {
-  width: 550px;
+  width: 40%;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
 }
   
 .carousel-inner img {
-  width: 550px;
-  height: 325px; 
+  width: 50px;
+  height: 310px; 
   object-fit: cover; 
 }
 
@@ -151,6 +152,7 @@ html * {
 .info-empresa-cartas {
   position: relative;
   height: 65vh; 
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,6 +220,7 @@ html * {
   text-align: center;
   padding: 70px 100px;
   font-family: sans-serif;
+  height: auto;
 }
   
 .img-trabajadores img {
@@ -489,10 +492,10 @@ html * {
     max-width: 100%;
   }
   .carousel {
-    width: 37vh;
+    width: 35vh;
    }
   .carousel-inner img {
-    max-height: 49vh;
+    max-height: 50vh;
   }
   .info-empresa-cartas{
     max-width: 100%;
@@ -511,6 +514,7 @@ html * {
   }
   .info-equipo{
     padding: 70px 14px;
+    max-height: auto;
   }
   .img-trabajadores img {
     height: 150px;
