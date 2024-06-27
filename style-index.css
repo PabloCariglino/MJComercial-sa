@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 html * {
   margin: 0;
@@ -11,7 +11,7 @@ h2 {
 }
 
 /* Estilos para los párrafos del carousel */
- p {
+p {
   font-size: 1.5rem;
 }
 
@@ -22,25 +22,23 @@ h2 {
   color: #ffffff !important;
   /* Letras blancas en estado inicial */
   /* font-family: CeraPro, sans-serif; */
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   transition: background-color 0.5s ease-in-out;
   font-size: 1.2vw;
   padding: 4px;
 }
 
-.navbar-brand{
+.navbar-brand {
   padding-left: 14px;
 }
 
-.navbar-nav li{
+.navbar-nav li {
   padding-right: 11px;
-  
 }
 
-.navbar-nav a{
+.navbar-nav a {
   color: black;
-  
 }
 
 /* Estilo para el enlace activo */
@@ -65,12 +63,8 @@ h2 {
   flex: auto;
   width: auto;
   height: 100vh;
-  /*Ajusta al total de la Ventana en todos los dispositivos*/
   max-width: 100%;
-  /* max-height: 100%; */
-  /*Ajusta la altura automáticamente para mantener la proporción*/
   object-fit: cover;
-  /* Mantiene la relación de aspecto y cubre el contenedor*/
 }
 
 .carousel-caption img {
@@ -87,8 +81,8 @@ h2 {
 }
 
 .carousel-caption {
-  bottom: 30%;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  bottom: 35%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   pointer-events: none;
 }
 
@@ -113,7 +107,7 @@ h2 {
 .nosotros-section {
   display: flex;
   font-family: CeraPro, sans-serif;
-  padding: 0px 40px;
+  padding: 10px 120px;
   margin-top: 85px;
   justify-content: center;
   align-items: center;
@@ -136,7 +130,7 @@ h2 {
 
 .nosotros-section-right {
   padding: 0px 60px;
-  padding-left: 10px;
+  padding-left: 50px;
   padding-right: 5px;
   display: flex;
   flex-direction: column;
@@ -147,7 +141,6 @@ h2 {
   width: 100%;
   height: auto;
   text-align: center;
-  
 }
 
 .nosotros-section-right h3 {
@@ -196,7 +189,6 @@ h2 {
   margin-bottom: 40px;
   font-family: sans-serif;
   pointer-events: none;
-
 }
 
 /* Estilo de cada tarjeta */
@@ -212,10 +204,9 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.tarjeta-datos-magnitud p{
+.tarjeta-datos-magnitud p {
   font-size: 15px;
   font-weight: 600;
-  
 }
 
 .tarjeta-datos-magnitud span {
@@ -224,7 +215,7 @@ h2 {
 
 /********************************************** SECCION SERVICIOS *********************************************/
 
-.servicios{
+.servicios {
   background-color: rgba(235, 235, 235, 0.788);
   margin-bottom: 20px;
 }
@@ -233,8 +224,7 @@ h2 {
   text-align: center;
   padding-top: 20px;
   font-weight: bold;
-  font-family: 'Bebas Neue', sans-serif;
- 
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* Estilos para la sección de iconos */
@@ -242,46 +232,47 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 0px;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  padding: 11px 130px;
+  flex-wrap: nowrap;
 }
 
 .card {
   position: relative;
   overflow: hidden;
   text-align: center;
-  width: 14rem; /* Establece un ancho consistente para todas las tarjetas */
-  height: 14rem; /* Establece un alto consistente para todas las tarjetas */
-  margin: 12px; /* Añade separación entre las tarjetas */
-  border: 1px solid #ddd;
+  width: 13rem;
+  height: 13rem;
+  margin: 10px;
   border-radius: 8px;
-  transition: transform 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* Transiciones suaves para la sombra y el zoom */
 }
 
 .card:hover {
   transform: scale(1.05); /* Añade un ligero zoom al pasar el ratón */
+  box-shadow: none; /* Elimina la sombra al pasar el cursor */
 }
 
 .card-img-top {
   width: 100%;
   height: 100%; /* Hace que la imagen ocupe todo el contenedor de la tarjeta */
   object-fit: cover; /* Asegura que la imagen mantenga su proporción y cubra el área */
-  transition: transform 0.4s ease;
+  transition: transform 0.2s ease;
 }
 
 .card p {
   position: absolute;
-  bottom: 90px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   margin: 0;
   padding: 10px 0;
-  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 9px 9px rgba(0, 0, 0, 1);
   color: white;
-  font-size: 1.6rem; /* Ajusta según sea necesario */
-  transition: transform 0.3s ease;
-  font-weight: 700;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease;
+  font-weight: 500;
   pointer-events: none;
 }
 
@@ -290,7 +281,30 @@ h2 {
 }
 
 .card:hover p {
-  transform: translateX(-50%) translateY(-10px); /* Mueve el texto un poco hacia arriba al pasar el ratón */
+  transform: translateX(-50%) translateY(-9px); /* Mueve el texto un poco hacia arriba al pasar el ratón */
+}
+
+/* Oscurecer toda la tarjeta */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Color y opacidad del oscurecimiento */
+  opacity: 1; /* Inicialmente completamente oscurecido */
+  transition: opacity 0.5s ease; /* Transición más lenta para la opacidad */
+  pointer-events: none; /* No captura eventos para que no interfiera con los enlaces */
+}
+
+.card:hover::before {
+  opacity: 0; /* Oculta el oscurecimiento al pasar el cursor */
 }
 
 /* Estilos para centrar el botón */
@@ -312,7 +326,7 @@ h2 {
   font-weight: bold;
   padding-top: 70px;
   padding-bottom: 5px;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   pointer-events: none;
   /* background-color: rgba(235, 235, 235, 0.788); */
 }
@@ -354,7 +368,7 @@ h2 {
 
   100% {
     /*-webkit-transform: translateX(calc(-100px*13));*/
-    transform: translateX(calc(-100px*13));
+    transform: translateX(calc(-100px * 13));
   }
 }
 
@@ -496,118 +510,100 @@ h2 {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 30px 10vw;
+  padding: 0px 8vw;
+  padding-top: 20px;
+  padding-bottom: 25px;
   background-color: #333;
-  /* Fondo gris oscuro */
   color: #fff;
-
 }
 
-.footer-section p{
+.footer-section p {
   font-size: 14px;
 }
 
 .footer-contacto-admin {
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  /* Centra verticalmente */
-  width: 100%;
+  justify-content: center;
   height: auto;
   align-items: right;
   text-align: right;
   flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
   order: 2;
-  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
-  width: 50%;
-  max-width: 400px;
   margin-bottom: 1px;
   margin: 2px;
+  align-items: center;
 }
 
 .footer-contacto-planta {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  /* Centra verticalmente */
-  align-items: left;
-  /* Centra horizontalmente */
   width: 100%;
-  height: auto;
-  text-align: left;
-  /* Alinea el texto al centro */
   text-align: left;
   order: 1;
-  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
-  flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
-  width: 50%;
-  max-width: 400px;
+  width: 100%;
   margin-bottom: 1px;
   margin-right: 1px;
 }
 
+.footer-contacto-admin img {
+  height: 14vh;
+  width: 21vh;
+}
+
 .footer-creds {
   text-align: center;
-  padding: 4px 10px;
+  padding: 5px 10px;
   font-size: 12px;
-  background-color: #333;
-  /* Fondo gris oscuro */
+  background-color: #131313;
   color: #fff;
-  /* Texto blanco */
 }
 
-.footer-creds img {
-  height: 7vh;
-  width: 11vh;
-}
-
-.footer-creds p{
+.footer-creds p {
   font-size: 12px;
 }
 
 @media screen and (max-width: 425px) {
-
   .footer-section {
-      flex-direction: column;
-      /* Cambia a disposición de columna en pantallas pequeñas */
-      text-align: center;
-      /* Centra el contenido en pantallas pequeñas */
+    flex-direction: column;
+    /* Cambia a disposición de columna en pantallas pequeñas */
+    text-align: center;
+    /* Centra el contenido en pantallas pequeñas */
   }
 
-
   .footer-contacto-admin {
-      width: 100%;
+    width: 100%;
+    align-items: center;
+  }
 
+  .footer-contacto-admin img {
+    height: 15vh;
+    width: 22vh;
   }
 
   .footer-contacto-planta {
-      width: 100%;
-
+    width: 100%;
+    text-align: center;
   }
 
   .footer-creds {
-      width: 100%;
+    width: 100%;
   }
 
   .footer-contacto-planta,
   .footer-contacto-admin {
-      margin-bottom: 20px;
-      /* Espaciado entre secciones en pantallas pequeñas */
+    margin-bottom: 20px;
   }
 }
 
 /************************************** Reglas de medios para hacer estilos más responsivos ****************************/
 @media (max-width: 991px) {
-  .navbar-nav li{
+  .navbar-nav li {
     font-size: 15px;
     padding-right: 0;
-   }
+  }
   .iconos-servicios {
     flex-wrap: nowrap;
     padding: 10px 20px;
-   }
+  }
   .carousel-caption img {
     /*LOGO EN IMAGEN AL LADO DEL PARRAFO*/
     max-width: 20vh;
@@ -627,30 +623,30 @@ h2 {
 
 @media (max-width: 768px) {
   html * {
-   font-size: 1.1rem;
+    font-size: 1.1rem;
   }
-  .navbar .container-fluid{
-   flex-direction: column;
-  } 
-  .navbar-nav a{
-   font-size: 18px;
-   text-align: center;
+  .navbar .container-fluid {
+    flex-direction: column;
   }
- .navbar-nav li{
-   font-size: 18px;
-   text-align: center;
-   padding-right: 0;
+  .navbar-nav a {
+    font-size: 18px;
+    text-align: center;
   }
-  .carousel-item img{
+  .navbar-nav li {
+    font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+  }
+  .carousel-item img {
     height: 100vh;
   }
-  
+
   .carousel-caption img {
     /*LOGO EN IMAGEN AL LADO DEL PARRAFO*/
     display: none;
   }
   .carousel-caption h1 {
-    font-size: 3vh; 
+    font-size: 3vh;
     padding-top: 30px;
   }
   .carousel-caption p {
@@ -661,40 +657,52 @@ h2 {
     bottom: 40%;
     display: block;
   }
-  .nosotros-section{
+  .nosotros-section {
     flex-direction: column;
+  }
+  .nosotros-section-left {
+    padding-left: 0px;
   }
   .nosotros-section-right {
     width: 100%;
     padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  .container-datos-magnitud{
+  .container-datos-magnitud {
     flex-direction: column;
   }
   .tarjeta-datos-magnitud {
     max-width: 300px;
   }
-  .separador-servicios h2{
+  .separador-servicios h2 {
     font-size: 2rem;
-    }
-  .iconos-servicios{
+  }
+  .iconos-servicios {
     flex-wrap: wrap;
   }
-  .card{
+  .card {
     flex-direction: column;
   }
-  .card p{
+  .card p {
     font-size: 1.2rem;
   }
-  #info-contacto{
+  #info-contacto {
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
-  .footer-contacto-admin{
+  .footer-contacto-admin {
     order: 2;
   }
-  .footer-contacto-planta{
+  .footer-contacto-planta {
     order: 1;
     padding-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 426px) {
+  .nosotros-section {
+    padding: 5px 30px;
   }
 }

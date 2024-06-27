@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 html * {
   margin: 0;
@@ -11,23 +11,23 @@ html * {
   background-color: transparent !important;
   color: #ffffff !important;
   /* Letras blancas en estado inicial */
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   transition: background-color 0.5s ease-in-out;
   font-size: 1.2vw;
   padding: 4px;
 }
-  
-.navbar-brand{
+
+.navbar-brand {
   padding-left: 14px;
 }
-  
-.navbar-nav li{
-  padding-right: 11px;  
+
+.navbar-nav li {
+  padding-right: 11px;
 }
-  
-.navbar-nav a{
-  color: black;    
+
+.navbar-nav a {
+  color: black;
 }
 
 /* Estilo para el enlace activo */
@@ -35,7 +35,7 @@ html * {
   color: #ffffff !important;
   /* Cambia "otroColor" al color deseado para el enlace activo */
 }
-  
+
 /* Estilo para el botón de alternancia en dispositivos móviles */
 .navbar-toggler-icon {
   background-color: transparent;
@@ -96,8 +96,6 @@ html * {
   border-radius: 10px;
 }
 
-
-
 /********************************************** SECCION SERVICIOS *********************************************/
 
 /* Estilos para la sección de iconos */
@@ -123,7 +121,7 @@ html * {
 }
 
 .iconos-servicios p {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   margin-top: 8px;
   font-size: 20px;
 }
@@ -146,11 +144,11 @@ html * {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 17rem;
-  padding: 5px;
+  max-width: 14rem;
+  padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  height: 180px; /* Altura fija para todas las tarjetas */
+  height: 225px; /* Altura fija para todas las tarjetas */
   text-align: center;
   box-sizing: border-box;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
@@ -158,7 +156,7 @@ html * {
   transition: all 400ms ease;
 }
 
-.tarjeta:hover{
+.tarjeta:hover {
   box-shadow: 0 5 20px rgba(0, 0, 0, 4);
   transform: translateY(-3%);
 }
@@ -195,7 +193,7 @@ html * {
   text-align: center;
   transition: background-color 0.3s ease;
   box-shadow: 5 5 20px rgba(0, 0, 0, 1);
-text-decoration: none;
+  text-decoration: none;
 }
 
 .btn-indice:hover {
@@ -228,7 +226,7 @@ text-decoration: none;
 /* Estilo para las imágenes en las tarjetas */
 .card img {
   max-width: 100%;
-  height: 160px; 
+  height: 160px;
   object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
 }
 
@@ -244,7 +242,7 @@ text-decoration: none;
   align-items: center;
   /* Centra verticalmente los elementos */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
- position: absolute;
+  position: absolute;
   bottom: 10px;
   transform: translateX(-50%);
 }
@@ -265,7 +263,7 @@ text-decoration: none;
   padding-top: 30px;
   font-size: 30%;
   font-weight: bold;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   background-color: rgb(235, 235, 235);
   max-width: 100%;
   max-height: auto;
@@ -292,7 +290,7 @@ text-decoration: none;
   padding-bottom: 30px;
   padding-top: 30px;
   font-weight: bold;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   background-color: rgb(235, 235, 235);
   max-width: 100%;
   max-height: auto;
@@ -325,175 +323,174 @@ text-decoration: none;
 /********************************************** SECCION FOOTER *********************************************/
 .footer-section {
   display: flex;
-  /*flex-wrap: wrap;*/
   justify-content: space-between;
-  /*align-items: flex-start;*/
   text-align: center;
-  padding: 30px 10vw;
-  font-size: 14px;
+  padding: 0px 8vw;
+  padding-top: 20px;
+  padding-bottom: 25px;
   background-color: #333;
   color: #fff;
+}
+
+.footer-section p {
+  font-size: 14px;
 }
 
 .footer-contacto-admin {
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  width: 100%;
+  justify-content: center;
   height: auto;
   align-items: right;
   text-align: right;
   flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
   order: 2;
-  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
-  width: 50%;
-  max-width: 400px;
   margin-bottom: 1px;
+  margin: 2px;
+  align-items: center;
 }
 
 .footer-contacto-planta {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
   width: 100%;
-  height: auto;
   text-align: left;
   order: 1;
-  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
-  flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
-  max-width: 400px;
+  width: 100%;
   margin-bottom: 1px;
+  margin-right: 1px;
+}
+
+.footer-contacto-admin img {
+  height: 14vh;
+  width: 21vh;
 }
 
 .footer-creds {
   text-align: center;
-  padding: 4px 10px;
+  padding: 5px 10px;
   font-size: 12px;
-  background-color: #333;
+  background-color: #131313;
   color: #fff;
 }
 
-.footer-creds img {
-  height: 7vh;
-  width: 11vh;
-}
-
-.footer-creds p{
+.footer-creds p {
   font-size: 12px;
 }
 
-/* Media query para hacer responsive */
 @media screen and (max-width: 425px) {
   .footer-section {
-      flex-direction: column;
-      /* Cambia a disposición de columna en pantallas pequeñas */
-      text-align: center;
-      /* Centra el contenido en pantallas pequeñas */
+    flex-direction: column;
+    /* Cambia a disposición de columna en pantallas pequeñas */
+    text-align: center;
+    /* Centra el contenido en pantallas pequeñas */
   }
 
   .footer-contacto-admin {
-      width: 100%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-contacto-admin img {
+    height: 15vh;
+    width: 22vh;
   }
 
   .footer-contacto-planta {
-      width: 100%;
+    width: 100%;
+    text-align: center;
   }
 
   .footer-creds {
-      width: 100%;
+    width: 100%;
   }
 
   .footer-contacto-planta,
   .footer-contacto-admin {
-      margin-bottom: 20px;
-      /* Espaciado entre secciones en pantallas pequeñas */
+    margin-bottom: 20px;
   }
 }
 
 /************************************** Reglas de medios para hacer estilos más responsivos ****************************/
 @media (max-width: 980px) {
-  .navbar-nav li{
+  .navbar-nav li {
     font-size: 15px;
     padding-right: 0;
   }
   .card {
-    max-width: 270px; 
+    max-width: 270px;
     height: auto;
   }
-  .btn{
+  .btn {
     padding: 4px;
   }
 }
 
 @media (max-width: 768px) {
-  .navbar .container-fluid{
-   flex-direction: column;
-  } 
-  .navbar-nav a{
-   font-size: 18px;
-   text-align: center;
+  .navbar .container-fluid {
+    flex-direction: column;
   }
-  .navbar-nav li{
-   font-size: 18px;
-   text-align: center;
-   padding-right: 0;
+  .navbar-nav a {
+    font-size: 18px;
+    text-align: center;
   }
-  .tarjetas-servicio-catalogo{
+  .navbar-nav li {
+    font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+  }
+  .tarjetas-servicio-catalogo {
     padding-bottom: 50px;
   }
   .tarjeta {
-   max-width: 100%;
-  } 
-  .card {
-   width: 100%;
-  /* Ocupa el 100% en pantallas más pequeñas */
+    max-width: 100%;
   }
- .btn{
-   max-height: 35px;
+  .card {
+    width: 100%;
+    /* Ocupa el 100% en pantallas más pequeñas */
+  }
+  .btn {
+    max-height: 35px;
   }
   .banner-planta-puerta {
     height: auto;
     /* Permitir que la altura sea automática en pantallas más pequeñas */
   }
-  #info-contacto{
+  #info-contacto {
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
-  .footer-contacto-admin{
+  .footer-contacto-admin {
     order: 2;
   }
-  .footer-contacto-planta{
+  .footer-contacto-planta {
     order: 1;
     padding-bottom: 20px;
+    text-align: center;
   }
 }
 
 @media (max-width: 670px) {
-  .navbar-nav li{
+  .navbar-nav li {
     font-size: 15px;
     padding-right: 0;
   }
-  .banner-servicios img{
+  .banner-servicios img {
     max-height: 30vh;
   }
-  .intro-desarrollo p{
+  .intro-desarrollo p {
     display: none;
   }
   .card {
-    max-width: 390px; 
-    width: 370px; 
+    max-width: 390px;
+    width: 370px;
   }
 }
 
 @media (max-width: 410px) {
-  .navbar-nav li{
+  .navbar-nav li {
     font-size: 15px;
     padding-right: 0;
   }
   .card {
-    max-width: 300px; 
+    max-width: 300px;
   }
 }

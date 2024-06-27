@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /*--------------------------------------------------VISTA EMPRESA----------------------------------------------------*/
 html * {
@@ -11,23 +11,23 @@ html * {
   background-color: transparent !important;
   color: #ffffff !important;
   /* Letras blancas en estado inicial */
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   transition: background-color 0.5s ease-in-out;
   font-size: 1.2vw;
   padding: 4px;
 }
-  
-.navbar-brand{
+
+.navbar-brand {
   padding-left: 14px;
 }
-  
-.navbar-nav li{
-  padding-right: 11px;  
+
+.navbar-nav li {
+  padding-right: 11px;
 }
-  
-.navbar-nav a{
-  color: black;    
+
+.navbar-nav a {
+  color: black;
 }
 
 /* Estilo para el enlace activo */
@@ -35,7 +35,7 @@ html * {
   color: #ffffff !important;
   /* Cambia "otroColor" al color deseado para el enlace activo */
 }
-  
+
 /* Estilo para el botón de alternancia en dispositivos móviles */
 .navbar-toggler-icon {
   background-color: transparent;
@@ -68,17 +68,15 @@ html * {
 
 /* Hacer que la imagen sea responsive */
 @media (max-width: 767px) {
+  /* Estilos para pantallas pequeñas */
+  .banner-planta {
+    height: auto;
+    /* Permitir que la altura sea automática en pantallas más pequeñas */
+  }
 
-    /* Estilos para pantallas pequeñas */
-    .banner-planta {
-        height: auto;
-        /* Permitir que la altura sea automática en pantallas más pequeñas */
-    }
-
-    .banner-equipo {
-        height: auto;
-
-    }
+  .banner-equipo {
+    height: auto;
+  }
 }
 
 /*-----------------------------------------PRESENTACION DATOS----------------------------------------------*/
@@ -90,19 +88,19 @@ html * {
   padding-top: 100px;
   max-width: 100%;
 }
-  
+
 .presentacion-datos {
   width: 420px;
   text-align: justify;
 }
-  
+
 .presentacion-datos h2 {
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: 900;
 }
-  
-.presentacion-datos p{
+
+.presentacion-datos p {
   padding-right: 41px;
   font-weight: 450;
   padding-bottom: 10px;
@@ -113,11 +111,11 @@ html * {
   width: 40%;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
 }
-  
+
 .carousel-inner img {
   width: 50px;
-  height: 310px; 
-  object-fit: cover; 
+  height: 310px;
+  object-fit: cover;
 }
 
 .container-datos-magnitud {
@@ -142,7 +140,7 @@ html * {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
   font-weight: 700;
- }
+}
 
 .tarjeta-datos-magnitud span {
   color: #c0261c;
@@ -151,7 +149,7 @@ html * {
 /*-----------------------------------------INFO EMPRESA----------------------------------------------*/
 .info-empresa-cartas {
   position: relative;
-  height: 65vh; 
+  height: 65vh;
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -182,7 +180,7 @@ html * {
 .cards-container {
   display: flex;
   align-items: center;
-  text-align: center;   
+  text-align: center;
   z-index: 1;
   pointer-events: none;
 }
@@ -192,9 +190,9 @@ html * {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   border-radius: 10px;
   margin: 10px;
-  padding: 12px; 
-  max-width: 300px; 
-  width: 290px; 
+  padding: 12px;
+  max-width: 300px;
+  width: 290px;
 }
 
 .card-body {
@@ -222,7 +220,7 @@ html * {
   font-family: sans-serif;
   height: auto;
 }
-  
+
 .img-trabajadores img {
   max-width: 100%;
   height: 390px;
@@ -234,147 +232,152 @@ html * {
   width: 100%;
   font-size: 15px;
 }
-  
-  
+
 /*------------------------------------------SLIDE FOTOS ANTIGUAS EQUIPO---------------------------------------------*/
 
 .separador-historia {
   text-align: center;
-  padding: 25px 50px;
+  padding: 10px 50px;
   /* Ajusta el espaciado superior e inferior según tus preferencias */
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   background-color: rgba(235, 235, 235, 0.788);
 }
 
 #carouselExampleFade {
   width: 100%; /* Puedes ajustar el ancho según sea necesario */
-  height: 50vh; /* Puedes ajustar la altura según sea necesario */
+  height: 48vh; /* Puedes ajustar la altura según sea necesario */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   object-fit: cover;
-  }
+}
+
+/* Video Background Container */
+.video-background-buriasco {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Full height of viewport */
+  overflow: hidden;
+  /* background-color: black; */
+  background-color: rgba(235, 235, 235, 0.788);
+  /* margin-bottom: 20px; */
+}
+
+/* Video Styling */
+#background-video-buriasco {
+  position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Ensures the video covers the container */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
 
 /********************************************** SECCION FOOTER *********************************************/
 .footer-section {
   display: flex;
-  /*flex-wrap: wrap;*/
   justify-content: space-between;
-  /*align-items: flex-start;*/
   text-align: center;
-  padding: 30px 10vw;
-  font-size: 14px;
+  padding: 0px 8vw;
+  padding-top: 20px;
+  padding-bottom: 25px;
   background-color: #333;
-  /* Fondo gris oscuro */
   color: #fff;
-  /* Texto blanco */
 }
 
+.footer-section p {
+  font-size: 14px;
+}
 
 .footer-contacto-admin {
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  /* Centra verticalmente */
-  width: 100%;
+  justify-content: center;
   height: auto;
   align-items: right;
   text-align: right;
   flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
   order: 2;
-  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
-  width: 50%;
-  max-width: 400px;
   margin-bottom: 1px;
+  margin: 2px;
+  align-items: center;
 }
 
 .footer-contacto-planta {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  /* Centra verticalmente */
-  align-items: left;
-  /* Centra horizontalmente */
   width: 100%;
-  height: auto;
-  text-align: left;
-  /* Alinea el texto al centro */
   text-align: left;
   order: 1;
-  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
-  flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
-  width: 50%;
-  max-width: 400px;
+  width: 100%;
   margin-bottom: 1px;
+  margin-right: 1px;
+}
+
+.footer-contacto-admin img {
+  height: 14vh;
+  width: 21vh;
 }
 
 .footer-creds {
   text-align: center;
-  padding: 4px 10px;
+  padding: 5px 10px;
   font-size: 12px;
-  background-color: #333;
-  /* Fondo gris oscuro */
+  background-color: #131313;
   color: #fff;
-  /* Texto blanco */
 }
 
-.footer-creds img {
-  height: 7vh;
-  width: 11vh;
-}
-
-.footer-creds p{
+.footer-creds p {
   font-size: 12px;
 }
 
-/* Media query para hacer responsive */
 @media screen and (max-width: 425px) {
+  .footer-section {
+    flex-direction: column;
+    /* Cambia a disposición de columna en pantallas pequeñas */
+    text-align: center;
+    /* Centra el contenido en pantallas pequeñas */
+  }
 
-    .footer-section {
-        flex-direction: column;
-        /* Cambia a disposición de columna en pantallas pequeñas */
-        text-align: center;
-        /* Centra el contenido en pantallas pequeñas */
-    }
+  .footer-contacto-admin {
+    width: 100%;
+    align-items: center;
+  }
 
+  .footer-contacto-admin img {
+    height: 15vh;
+    width: 22vh;
+  }
 
-    .footer-contacto-admin {
-        width: 100%;
+  .footer-contacto-planta {
+    width: 100%;
+    text-align: center;
+  }
 
-    }
+  .footer-creds {
+    width: 100%;
+  }
 
-    .footer-contacto-planta {
-        width: 100%;
-
-    }
-
-    .footer-creds {
-        width: 100%;
-    }
-
-    .footer-contacto-planta,
-    .footer-contacto-admin {
-        margin-bottom: 20px;
-        /* Espaciado entre secciones en pantallas pequeñas */
-        text-align: center;
-        
-    }
+  .footer-contacto-planta,
+  .footer-contacto-admin {
+    margin-bottom: 20px;
+  }
 }
 
 /************************************** Reglas de medios para hacer estilos más responsivos ****************************/
 @media (max-width: 980px) {
-  .navbar-nav li{
+  .navbar-nav li {
     font-size: 15px;
     padding-right: 0;
   }
   .card {
-    max-width: 250px; 
-    width: 195px; 
+    max-width: 250px;
+    width: 195px;
   }
   .img-trabajadores img {
     max-width: 100%;
@@ -383,85 +386,86 @@ html * {
 }
 
 @media (max-width: 768px) {
- .navbar .container-fluid{
-  flex-direction: column;
- } 
- .navbar-nav a{
-  font-size: 18px;
-  text-align: center;
- }
- .navbar-nav li{
-  font-size: 18px;
-  text-align: center;
-  padding-right: 0;
- }
-  .presentacion{
+  .navbar .container-fluid {
+    flex-direction: column;
+  }
+  .navbar-nav a {
+    font-size: 18px;
+    text-align: center;
+  }
+  .navbar-nav li {
+    font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+  }
+  .presentacion {
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
     padding-top: 60px;
   }
-  .presentacion-datos{
+  .presentacion-datos {
     order: 2;
     text-align: center;
     padding-top: 30px;
   }
-  .presentacion-datos p{
+  .presentacion-datos p {
     padding: 3px 10px;
   }
-  #carouselExampleIndicators{
+  #carouselExampleIndicators {
     order: 1;
   }
   .carousel {
-   width: 70vh;
+    width: 70vh;
   }
   .carousel-inner img {
     max-height: 50vh;
   }
   .card {
     margin: 8px;
-    padding: 1px; 
-    max-width: 250px; 
-    width: 200px; 
+    padding: 1px;
+    max-width: 250px;
+    width: 200px;
   }
-  
+
   .card-title {
     font-size: 1rem;
   }
   .card-text {
     font-size: 0.8rem;
   }
-  .info-equipo{
+  .info-equipo {
     padding: 70px 40px;
   }
   .img-trabajadores img {
     max-width: 100%;
     height: 240px;
   }
-  #info-contacto{
+  #info-contacto {
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
-  .footer-contacto-admin{
+  .footer-contacto-admin {
     order: 2;
   }
-  .footer-contacto-planta{
+  .footer-contacto-planta {
     order: 1;
     padding-bottom: 20px;
+    text-align: center;
   }
   .tarjeta-datos-magnitud {
     width: 100%;
     max-width: 220px;
-   }
+  }
 }
 
 @media (max-width: 670px) {
-  .navbar-nav li{
+  .navbar-nav li {
     font-size: 15px;
     padding-right: 0;
   }
-   .carousel {
-   width: 70vh;
+  .carousel {
+    width: 70vh;
   }
   .carousel-inner img {
     max-height: 55vh;
@@ -472,8 +476,8 @@ html * {
     display: none;
   }
   .card {
-    max-width: 390px; 
-    width: 370px; 
+    max-width: 390px;
+    width: 370px;
   }
   .img-trabajadores img {
     max-width: 100%;
@@ -482,25 +486,25 @@ html * {
 }
 
 @media (max-width: 410px) {
-  .navbar-nav li{
+  .navbar-nav li {
     font-size: 15px;
     padding-right: 0;
   }
-  .presentacion-datos{
+  .presentacion-datos {
     padding-top: 30px;
     padding: 32px;
     max-width: 100%;
   }
   .carousel {
     width: 35vh;
-   }
+  }
   .carousel-inner img {
     max-height: 50vh;
   }
-  .info-empresa-cartas{
+  .info-empresa-cartas {
     max-width: 100%;
   }
-  .video-background{
+  .video-background {
     width: 100%;
   }
   /* Ocultar la tercera tarjeta en pantallas pequeñas */
@@ -509,24 +513,14 @@ html * {
     display: none;
   }
   .card {
-    max-width: 290px; 
-    width: 215px; 
+    max-width: 290px;
+    width: 215px;
   }
-  .info-equipo{
+  .info-equipo {
     padding: 70px 14px;
     max-height: auto;
   }
   .img-trabajadores img {
     height: 150px;
-  }
-}
-
-@media (max-with: 320px){
-  .footer-contacto-planta,
-  .footer-contacto-admin {
-      align-items: center;
-      text-align: center;
-      align-content: center;
-      
   }
 }

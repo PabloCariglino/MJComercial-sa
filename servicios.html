@@ -62,7 +62,7 @@
 </head>
 
 <body>
-  <navbar style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+  <navbar id="navbar" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-transparent"
       style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
       <div class="container-fluid">
@@ -130,18 +130,25 @@
         <a href="#fabricacion-ferroviaria" type="button" class="btn-indice">Más Información</a>
       </div>
     </div>
-    <div class="tarjeta" style="width: 18rem;">
+    <div class="tarjeta">
       <div class="tarjeta-body">
-        <h3 class="tarjeta-title">Casas/Campamentos Moviles habitacionales</h3>
+        <h3 class="tarjeta-title">Campamentos Moviles</h3>
         <p class="tarjeta-text">Construccion modular de complejos habitacionales y funcionales.</p>
         <a href="#fabricacion-modular" type="button" class="btn-indice">Más Información</a>
       </div>
     </div>
-    <div class="tarjeta" style="width: 18rem;">
+    <div class="tarjeta">
       <div class="tarjeta-body">
         <h3 class="tarjeta-title">Repuestos Ferroviarios</h3>
         <p class="tarjeta-text">Descubre nuestra amplia gama de repuestos ferroviarios.</p>
         <a href="#repuestos-ferroviarios" type="button" class="btn-indice">Más Información</a>
+      </div>
+    </div>
+    <div class="tarjeta" >
+      <div class="tarjeta-body">
+        <h3 class="tarjeta-title">Infraestructura y Equipos</h3>
+        <p class="tarjeta-text">Soluciones innovadoras y de alta calidad para la industria ferroviaria y minera.</p>
+        <a href="#infraestructura-equipos" type="button" class="btn-indice">Más Información</a>
       </div>
     </div>
   </div>
@@ -227,7 +234,7 @@
       <div class="card" style="width: 25rem;">
         <img src="img/servicios/Vagon Granero.png" class="card-img-top" alt="Vagon granero">
         <div class="card-body">
-          <h5 class="card-title">Vagon Granero</h5>
+          <h5 class="card-title">Contenedores Granero</h5>
           <p class="card-text">Transformacion de vagon de carga general para transporte de cereales y harinas con carga
             superior.</p>
           <a href="img/servicios/vagon granero info.png" target="_blank" class="btn btn-primary">Mas detalles</a>
@@ -290,6 +297,11 @@
     <img src="img/servicios/repuestos ferroviarios.png" alt="detalle de repuestos ferroviarios">
   </div>
 
+  <section id="infraestructura-equipos" class="separador-repuestos">
+    <h2>INFRAESTRUCTURA Y EQUIPOS</h2>
+  </section>
+  <br>
+
   <div class="cards-vagones">
     <div class="card" style="width: 25rem;">
       <img src="img/servicios/barcazas minerales.png" class="card-img-top" alt="barcazas minerales">
@@ -340,29 +352,32 @@
   <footer id="info-contacto" class="footer-section">
 
     <div class="footer-contacto-planta">
-      <h3>PLANTA INDUSTRIAL</h3>
-      <p>Av. Bautista Buriasco 41 - (2445)</p>
-      <p>María Juana - Santa Fe - Argentina</p>
+      <h3>PLANTA INDUSTRIAL Y ADMINISTRACIÓN</h3>
+      <p>Av. Bautista Buriasco 41 - (2445), María Juana - Santa Fe - Argentina.</p>
       <p>Tel.: (54-03406) 471-214 /471-414/ 471-682</p>
+      <p>Email: info@mjcomercial.com.ar</p>
       <p>Email: abastecimientoplanta@mjcomercial.com.ar</p>
     </div>
 
     <div class="footer-contacto-admin">
-      <h3>ADMINISTRACION Y VENTAS</h3>
+      <!-- <h3>ADMINISTRACION Y VENTAS</h3>
       <p>Av. Libertador 13687 - 1º piso- (1640)</p>
       <p>Martínez - Buenos Aires - Argentina</p>
       <p>Tel.: 4792-5505</p>
-      <p>Email: info@mjcomercial.com.ar</p>
-
+      <p>Email: info@mjcomercial.com.ar</p> -->
+      <a href="#navbar">
+      <img src="/img/logoMJ/logoMJsinfondoHD.png" alt="Logo de empresa MJ" height="100px" width="200px">
+      </a>
     </div>
 
   </footer>
 
   <div class="footer-creds">
-    <img src="/img/logoMJ/logoMJsinfondoHD.png" alt="Logo de empresa MJ">
+    <!-- <img src="/img/logoMJ/logoMJsinfondoHD.png" alt="Logo de empresa MJ"> -->
     <p>©Copyright 2023 - mjcomercial.com.ar - Todos los derechos reservados.</p>
     <p>Las marcas y nombres comerciales mencionados pertenecen a sus respectivos propietarios.</p>
   </div>
+
 </body>
 
 </html>
