@@ -113,11 +113,11 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 5%;
+  padding: 0px 4%;
   max-width: 1000px;
   margin: 0 auto;
-  padding-bottom: 60px;
-  padding-top: 99px;
+  padding-bottom: 70px;
+  padding-top: 110px;
 }
 
 /* Estilos para cada ícono y texto */
@@ -146,10 +146,11 @@ p {
 
 .nosotros-section {
   position: relative;
-  overflow: hidden;
-  height: 480px;
+  /* overflow: hidden; */
+  height: 490px;
   margin-top: 60px;
-  margin-bottom: 70px;
+  margin-bottom: 165px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .nosotros-section-fondo {
@@ -177,12 +178,12 @@ p {
   padding: 26px;
   margin: 0px;
   margin-left: 575px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   font-family: CeraPro, sans-serif;
 }
 
 .nosotros-section-right h3 {
-  font-family: sans-serif;
+  font-family: CeraPro, sans-serif;
   font-size: 20px;
   font-weight: 800;
   padding-top: 5px;
@@ -217,8 +218,9 @@ p {
 }
 
 /********************************************** SECCION SERVICIOS *********************************************/
-
 .servicios {
+  padding: 20px;
+  text-align: start;
   background-color: rgba(235, 235, 235, 0.788);
   margin-bottom: 20px;
 }
@@ -226,91 +228,57 @@ p {
 .separador-servicios {
   text-align: center;
   padding-top: 20px;
-  font-weight: bold;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: CeraPro, sans-serif;
 }
 
-/* Estilos para la sección de iconos */
-.iconos-servicios-info {
+.separador-servicios h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-family: CeraPro, sans-serif;
+}
+
+.cards-servicios-info {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 11px 130px;
-  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin: 0;
+  margin-left: 0;
 }
 
 .card {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  width: 13rem;
-  height: 13rem;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  transition: box-shadow 0.2s ease, transform 0.2s ease; /* Transiciones suaves para la sombra y el zoom */
+  margin: 0;
+  border: none;
+  transition: transform 0.3s;
+  font-family: CeraPro, sans-serif;
 }
 
 .card:hover {
-  transform: scale(1.05); /* Añade un ligero zoom al pasar el ratón */
-  box-shadow: none; /* Elimina la sombra al pasar el cursor */
+  transform: scale(1.05);
 }
 
 .card-img-top {
-  width: 100%;
-  height: 100%; /* Hace que la imagen ocupe todo el contenedor de la tarjeta */
-  object-fit: cover; /* Asegura que la imagen mantenga su proporción y cubra el área */
-  transition: transform 0.2s ease;
+  height: 180px;
+  object-fit: cover;
 }
 
-.card p {
-  position: absolute;
-  bottom: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+.card-body {
+  background-color: rgba(235, 235, 235, 0.788);
+  padding: 15px 0px;
   margin: 0;
-  padding: 10px 0;
-  text-shadow: 2px 9px 9px rgba(0, 0, 0, 1);
-  color: white;
-  font-size: 1.4rem;
-  transition: transform 0.2s ease;
-  font-weight: 500;
-  pointer-events: none;
 }
 
-.card:hover .card-img-top {
-  transform: scale(1.1); /* Hace zoom en la imagen al pasar el ratón */
+.card-title {
+  padding-top: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
-.card:hover p {
-  transform: translateX(-50%) translateY(-9px); /* Mueve el texto un poco hacia arriba al pasar el ratón */
+.card-text {
+  font-size: 0.9rem;
 }
 
-/* Oscurecer toda la tarjeta */
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.4
-  ); /* Color y opacidad del oscurecimiento */
-  opacity: 1; /* Inicialmente completamente oscurecido */
-  transition: opacity 0.5s ease; /* Transición más lenta para la opacidad */
-  pointer-events: none; /* No captura eventos para que no interfiera con los enlaces */
-}
-
-.card:hover::before {
-  opacity: 0; /* Oculta el oscurecimiento al pasar el cursor */
-}
-
-/* Estilos para centrar el botón */
 .section-button-servicios {
   text-align: center;
   margin-top: 20px;
@@ -319,19 +287,21 @@ p {
 
 .section-button-servicios a {
   display: inline-block;
-  /* Hace que el botón sea un elemento en línea para centrarlo */
 }
 
 /********************************************** SECCION CLIENTES LOGOS*********************************************/
+.ventas-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
 .ventas-section h2 {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  padding-top: 70px;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
   font-family: "Bebas Neue", sans-serif;
   pointer-events: none;
-  /* background-color: rgba(235, 235, 235, 0.788); */
 }
 
 .slider {
@@ -339,7 +309,6 @@ p {
   margin: auto;
   width: 80vw;
   overflow: hidden;
-  padding-bottom: 70px;
 }
 
 .slider .slider-track {
@@ -548,8 +517,7 @@ p {
 }
 
 .footer-contacto-admin img {
-  height: 14vh;
-  width: 21vh;
+  padding-bottom: 15px;
 }
 
 .footer-creds {
