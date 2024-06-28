@@ -65,6 +65,7 @@ p {
   height: 100vh;
   max-width: 100%;
   object-fit: cover;
+  filter: brightness(0.8);
 }
 
 .carousel-caption img {
@@ -81,66 +82,103 @@ p {
 }
 
 .carousel-caption {
-  bottom: 35%;
+  text-align: left;
+  right: auto;
+  bottom: 27%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  pointer-events: none;
 }
 
 .carousel-caption h1 {
-  text-align: center;
-  font-size: 2.1rem;
+  text-align: left;
+  padding-right: 150px;
+  font-size: 2.6rem;
   text-shadow: 0 0 9px rgba(0, 0, 0, 9);
   font-weight: bold;
   letter-spacing: 1px; /* Espaciado entre letras */
 }
 
 .carousel-caption p {
-  background: rgba(0, 0, 0, 0.6);
-  font-size: 0.9rem;
-  text-align: center;
+  /* background: rgba(0, 0, 0, 0.6); */
+  font-size: 1rem;
+  text-align: left;
+  padding-bottom: 30px;
   text-shadow: 0 0 9px rgba(0, 0, 0, 9);
   letter-spacing: 0.5px; /* Espaciado entre letras */
+}
+
+/********************************************** SECCION SERVICIOS *********************************************/
+
+/* Estilos para la sección de iconos */
+.iconos-servicios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 5%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  padding-top: 99px;
+}
+
+/* Estilos para cada ícono y texto */
+.iconos-servicios a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1px;
+  text-align: center;
+}
+
+.iconos-servicios img {
+  max-width: 220px;
+  height: 80px;
+}
+
+.iconos-servicios p {
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 8px;
+  font-size: 20px;
+  padding: 10px 53px;
 }
 
 /******************************************** SECCION NOSOTROS ***************************************/
 
 .nosotros-section {
-  display: flex;
-  font-family: CeraPro, sans-serif;
-  padding: 10px 120px;
-  margin-top: 85px;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 480px;
+  margin-top: 60px;
+  margin-bottom: 70px;
 }
 
-.nosotros-section-left {
+.nosotros-section-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  align-items: center;
-  padding-left: 5px;
+  z-index: 1;
 }
 
-.nosotros-section-left img {
+.nosotros-section-fondo img {
   width: 100%;
-  height: auto;
-  /* Ajusta la altura automáticamente para mantener la proporción */
-  display: flex;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  object-fit: cover;
 }
 
 .nosotros-section-right {
-  padding: 0px 60px;
-  padding-left: 50px;
-  padding-right: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* Centra verticalmente */
-  align-items: center;
-  /* Centra horizontalmente */
-  width: 100%;
-  height: auto;
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: white;
+  padding: 26px;
+  margin: 0px;
+  margin-left: 575px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: CeraPro, sans-serif;
 }
 
 .nosotros-section-right h3 {
@@ -163,7 +201,7 @@ p {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   transition: background-color 0.3s ease;
   /* Agrega una transición suave al color de fondo */
   align-items: center;
@@ -176,41 +214,6 @@ p {
 .button:hover {
   background-color: darkred;
   /* Cambia el color de fondo al pasar el puntero */
-}
-
-.container-datos-magnitud {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  padding: 10px 30px;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  font-family: sans-serif;
-  pointer-events: none;
-}
-
-/* Estilo de cada tarjeta */
-.tarjeta-datos-magnitud {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 180px;
-  margin: 20px;
-  padding: 7px 0px;
-  box-sizing: border-box;
-  border: 1px solid #fdfdfd3d;
-  border-radius: 7px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.tarjeta-datos-magnitud p {
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.tarjeta-datos-magnitud span {
-  color: #c0261c;
 }
 
 /********************************************** SECCION SERVICIOS *********************************************/
@@ -228,7 +231,7 @@ p {
 }
 
 /* Estilos para la sección de iconos */
-.iconos-servicios {
+.iconos-servicios-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
