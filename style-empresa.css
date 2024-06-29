@@ -43,15 +43,13 @@ html * {
 }
 
 /*-----------------------------------------BANNER PLANTA----------------------------------------------*/
-.banner-planta {
+.banner-empresa {
   flex: auto;
   width: auto;
   /*height: 47vw;*/
-  height: auto;
+  height: 50vh;
   max-width: 100%;
-  /*Ajusta el ancho máximo según tus necesidades */
   max-height: 100%;
-  /*Ajusta la altura automáticamente para mantener la proporción*/
   object-fit: cover;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
   overflow: hidden;
@@ -59,8 +57,25 @@ html * {
   position: relative;
 }
 
+.intro-banner-empresa {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.intro-banner-empresa h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
 /* Asegurar que la imagen ocupe todo el contenedor */
-.banner-planta img {
+.banner-empresa img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -85,13 +100,15 @@ html * {
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
-  padding-top: 100px;
+  padding-top: 120px;
   max-width: 100%;
+  font-family: CeraPro, sans-serif;
 }
 
 .presentacion-datos {
   width: 420px;
-  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .presentacion-datos h2 {
@@ -101,21 +118,15 @@ html * {
 }
 
 .presentacion-datos p {
-  padding-right: 41px;
   font-weight: 450;
   padding-bottom: 10px;
   font-size: 15px;
 }
 
-.carousel {
-  width: 40%;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
-}
-
-.carousel-inner img {
-  width: 50px;
-  height: 310px;
-  object-fit: cover;
+.imagen-fabrica {
+  max-width: 100vh;
+  max-height: 150vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .container-datos-magnitud {
@@ -125,11 +136,18 @@ html * {
   text-align: center;
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
   padding-bottom: 60px;
-  padding-top: 10px;
+  padding-top: 80px;
   pointer-events: none;
 }
 
-/* Estilo de cada tarjeta */
+.container-datos-magnitud h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
 .tarjeta-datos-magnitud {
   box-sizing: border-box;
   width: 100%;
@@ -138,7 +156,7 @@ html * {
   padding: 5px 5px;
   border: 1px solid #fdfdfd3d;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   font-weight: 700;
 }
 
@@ -210,48 +228,43 @@ html * {
   color: white;
 }
 
-/*------------------------------------------INFO EQUIPO---------------------------------------------------*/
-.info-equipo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 70px 100px;
-  font-family: sans-serif;
-  height: auto;
-}
-
-.img-trabajadores img {
-  max-width: 100%;
-  height: 390px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
-}
-
-.info-equipo-parrafo {
-  margin-top: 25px;
-  width: 100%;
-  font-size: 15px;
-}
-
 /*------------------------------------------SLIDE FOTOS ANTIGUAS EQUIPO---------------------------------------------*/
-
-.separador-historia {
-  text-align: center;
-  padding: 10px 50px;
-  /* Ajusta el espaciado superior e inferior según tus preferencias */
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: "Bebas Neue", sans-serif;
-  background-color: rgba(235, 235, 235, 0.788);
-}
-
 #carouselExampleFade {
-  width: 100%; /* Puedes ajustar el ancho según sea necesario */
-  height: 48vh; /* Puedes ajustar la altura según sea necesario */
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  object-fit: cover;
+  margin-top: 100px;
+}
+
+.carousel {
+  width: 40%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-caption {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.carousel-caption p {
+  font-size: 2.4rem;
+  font-weight: 800;
+  width: 100%;
+  padding-top: 20px;
+  color: white;
+  text-shadow: 2px 2px 9px black;
+}
+
+.carousel-inner img {
+  width: 50px;
+  height: 70vh;
   object-fit: cover;
 }
 
@@ -320,8 +333,7 @@ html * {
 }
 
 .footer-contacto-admin img {
-  height: 14vh;
-  width: 21vh;
+  padding-bottom: 15px;
 }
 
 .footer-creds {

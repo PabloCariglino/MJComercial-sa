@@ -330,8 +330,7 @@ html * {
 }
 
 .footer-contacto-admin img {
-  height: 14vh;
-  width: 21vh;
+  padding-bottom: 15px;
 }
 
 .footer-creds {

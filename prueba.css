@@ -1,0 +1,10 @@
+.carousel {
+  width: 40%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-inner img {
+  width: 50px;
+  height: 310px;
+  object-fit: cover;
+}
