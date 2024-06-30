@@ -47,6 +47,7 @@ html * {
   position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
   pointer-events: none;
+  text-shadow: 2px 2px 4px black;
 }
 
 .banner-servicios img {
@@ -74,17 +75,6 @@ html * {
   text-shadow: 2px 2px 4px black;
 }
 
-.intro-desarrollo p {
-  font-size: 1em;
-  margin-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-  border-radius: 8px;
-  padding: 10px 10px;
-  text-shadow: 0 0 9px rgba(0, 0, 0, 9);
-  color: white;
-  text-shadow: 2px 2px 4px black;
-}
-
 .intro-desarrollo::before {
   content: "";
   position: absolute;
@@ -96,96 +86,161 @@ html * {
   border-radius: 10px;
 }
 
+.intro-desarrollo-parrafo {
+  padding: 50px 60px;
+  text-align: center;
+}
+
+.intro-desarrollo-parrafo p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  font-family: CeraPro, sans-serif;
+}
+
 /************************************TARJETAS DE REDIRECCION A SERVICIOS*******************************************/
 .tarjetas-servicio-catalogo {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Espacio entre las tarjetas */
-  padding: 30px;
-  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   padding-bottom: 100px;
 }
 
-.tarjeta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 14rem;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  height: 225px; /* Altura fija para todas las tarjetas */
-  text-align: center;
+.catalogo-servicio-ficha {
+  position: relative;
+  flex: 1 1 25%; /* Hace que cada tarjeta ocupe una cuarta parte del ancho */
   box-sizing: border-box;
-  box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
-  cursor: default;
-  transition: all 400ms ease;
-}
-
-.tarjeta:hover {
-  box-shadow: 0 5 20px rgba(0, 0, 0, 4);
-  transform: translateY(-3%);
-}
-
-.tarjeta-body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 470px; /* Establece una altura mínima para las tarjetas */
+}
+
+.catalogo-servicio-ficha img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease; /* Agrega transición para el efecto de zoom */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  filter: brightness(80%);
+}
+
+.catalogo-servicio-ficha:hover img {
+  transform: scale(1.1); /* Aplica el efecto de zoom */
+}
+
+.tarjeta-title,
+.tarjeta-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  padding: 10px;
+  /* background: rgba(0, 0, 0, 0.6); */
+  margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .tarjeta-title {
-  margin: 10px 0;
-  font-size: 19px;
-  font-weight: 800;
-  font-family: sans-serif;
+  font-size: 1.6rem;
+  pointer-events: none;
+  font-weight: 700;
 }
 
 .tarjeta-text {
-  margin: 10px 0;
-  font-size: 14px;
+  font-size: 1.1rem;
+  pointer-events: none;
 }
 
 .btn-indice {
-  display: inline-block;
-  padding: 5px 10px;
+  /* display: inline-block; */
+  padding: 1px 8px;
   margin-top: 5px;
   font-size: 1em;
   color: #fff;
   background-color: #c0261c;
-  border: none;
-  border-radius: 5px;
+  /* border: none; */
   cursor: pointer;
   text-align: center;
   transition: background-color 0.3s ease;
-  box-shadow: 5 5 20px rgba(0, 0, 0, 1);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
   text-decoration: none;
+  position: relative;
+  z-index: 2;
+  width: 55%;
 }
 
 .btn-indice:hover {
   background-color: darkred;
 }
 
+@media (max-width: 768px) {
+  .catalogo-servicio-ficha {
+    flex: 1 1 50%; /* Hace que cada tarjeta ocupe la mitad del ancho en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .catalogo-servicio-ficha {
+    flex: 1 1 100%; /* Hace que cada tarjeta ocupe todo el ancho en pantallas muy pequeñas */
+    min-height: 300px; /* Ajusta la altura mínima para pantallas más pequeñas */
+  }
+}
+
 /************************************* SECCION TARJETAS SERVICIOS VAGONES****************************************/
+.separador-repuestos {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: rgb(235, 235, 235);
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  /* color: white; */
+}
+
+#fabricacion-ferroviaria {
+  background-image: url("/img/servicios/foto.fila.trenes.exterior2.png");
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen en la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
 .cards-vagones {
   display: flex;
+  margin: 0;
   flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
   justify-content: space-around;
-  padding-top: 45px;
+  /* padding-top: 45px; */
 }
 
 /* Estilo para cada tarjeta */
 .card {
   width: 100%;
+  background-color: transparent;
+  width: 100%;
   margin-bottom: 45px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: default;
   transition: all 400ms ease;
+  color: white;
+  border: none;
+  flex-direction: column;
+  position: relative;
 }
 
 .card:hover {
@@ -196,48 +251,63 @@ html * {
 /* Estilo para las imágenes en las tarjetas */
 .card img {
   max-width: 100%;
-  height: 160px;
-  object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
+  transition: opacity 0.3s ease;
 }
 
+/* Contenedor para el texto y el botón */
+.card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* Estilo para el párrafo */
+.card-body p {
+  width: 100%;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: -85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* Botón */
 .btn {
+  border: none;
   background-color: #c0261c;
   color: white;
-  padding: 4px 40px;
+  padding: 4px 4px;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 6px;
   transition: background-color 0.3s ease;
-  /* Agrega una transición suave al color de fondo */
-  align-items: center;
-  /* Centra verticalmente los elementos */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 10px;
-  transform: translateX(-50%);
+  border-radius: 0;
+  align-self: center;
+  margin-top: auto;
+  z-index: 2;
+}
+
+/* Oscurece la imagen y muestra el texto cuando se pasa el cursor sobre la tarjeta */
+.card:hover img {
+  opacity: 0.5;
+}
+
+.card:hover .card-body p {
+  opacity: 1;
 }
 
 .btn:hover {
   background-color: darkred;
   /* Cambia el color de fondo al pasar el puntero */
-}
-
-.card-body p {
-  margin-bottom: 35px;
-  text-align: center;
-}
-
-.separador-repuestos {
-  text-align: center;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  font-size: 30%;
-  font-weight: bold;
-  font-family: "Bebas Neue", sans-serif;
-  background-color: rgb(235, 235, 235);
-  max-width: 100%;
-  max-height: auto;
-  object-fit: cover;
 }
 
 /* Estilo para el contenedor de la imagen */
