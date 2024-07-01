@@ -198,17 +198,21 @@ html * {
 }
 
 /************************************* SECCION TARJETAS SERVICIOS VAGONES****************************************/
-.separador-repuestos {
+.separador-fabricacion-ferroviaria {
   text-align: center;
   padding-bottom: 30px;
   padding-top: 30px;
-  font-weight: bold;
   font-family: "Bebas Neue", sans-serif;
-  background-color: rgb(235, 235, 235);
+  background: transparent;
   max-width: 100%;
-  max-height: auto;
   object-fit: cover;
-  /* color: white; */
+  color: white;
+}
+
+.separador-fabricacion-ferroviaria h2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px black;
+  pointer-events: none;
 }
 
 #fabricacion-ferroviaria {
@@ -281,6 +285,10 @@ html * {
   text-shadow: 2px 2px 4px black;
 }
 
+.card-body h5 {
+  margin-bottom: 15px;
+}
+
 /* Botón */
 .btn {
   border: none;
@@ -310,13 +318,30 @@ html * {
   /* Cambia el color de fondo al pasar el puntero */
 }
 
-/* Estilo para el contenedor de la imagen */
+/************************************* SECCION REPUESTO FERROVIARIOS**************************************/
+.separador-repuestos {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 60px;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: white;
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.separador-repuestos h2 {
+  font-size: 2.5rem;
+  /* text-shadow: 2px 2px 4px black; */
+  pointer-events: none;
+}
+
 .imagen-respuestos-ferroviarios {
   text-align: center; /* Centra la imagen horizontalmente */
   margin-bottom: 18px;
 }
 
-/* Estilo para la imagen */
 .imagen-respuestos-ferroviarios img {
   max-width: 100%; /* Hace que la imagen sea completamente responsive */
   height: auto;
@@ -324,17 +349,41 @@ html * {
 }
 
 /************************************* SECCION TARJETAS FABRICACION MODULOS**************************************/
-
 .separador-modulos {
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  font-weight: bold;
-  font-family: "Bebas Neue", sans-serif;
-  background-color: rgb(235, 235, 235);
+  padding-bottom: 1px;
+  padding-top: 40px;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.288);
   max-width: 100%;
   max-height: auto;
   object-fit: cover;
+}
+
+.separador-modulos h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+  pointer-events: none;
+  /* text-shadow: 2px 2px 4px black; */
+}
+
+/************************************* SECCION INFRAESTRUCTURA Y EQUIPOS**************************************/
+.separador-infraestructura-equipos {
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.288);
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.separador-infraestructura-equipos h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+  /* text-shadow: 2px 2px 4px black; */
+  pointer-events: none;
 }
 
 /************************************* SECCION banner planta puerta****************************************/
@@ -365,9 +414,9 @@ html * {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 0px 8vw;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 0px 6vw;
+  padding-top: 22px;
+  padding-bottom: 22px;
   background-color: #333;
   color: #fff;
 }
@@ -394,13 +443,13 @@ html * {
   width: 100%;
   text-align: left;
   order: 1;
-  width: 100%;
-  margin-bottom: 1px;
-  margin-right: 1px;
+  margin-bottom: 0;
+  margin-top: 0;
+  align-content: center;
 }
 
 .footer-contacto-admin img {
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .footer-creds {
@@ -413,6 +462,11 @@ html * {
 
 .footer-creds p {
   font-size: 12px;
+}
+
+.whatsapp-button {
+  padding-right: 10px;
+  align-content: center;
 }
 
 @media screen and (max-width: 425px) {
@@ -431,6 +485,11 @@ html * {
   .footer-contacto-admin img {
     height: 15vh;
     width: 22vh;
+  }
+
+  .flecha img {
+    height: 11vh;
+    width: 10vh;
   }
 
   .footer-contacto-planta {

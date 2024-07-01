@@ -42,7 +42,7 @@ html * {
   /* Cambia "colorBoton" al color deseado para el botón de alternancia */
 }
 
-/*-----------------------------------------BANNER PLANTA----------------------------------------------*/
+/*-----------------------------------------BANNER EMPRESA----------------------------------------------*/
 .banner-empresa {
   flex: auto;
   width: auto;
@@ -298,9 +298,9 @@ html * {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 0px 8vw;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 0px 6vw;
+  padding-top: 22px;
+  padding-bottom: 22px;
   background-color: #333;
   color: #fff;
 }
@@ -327,13 +327,13 @@ html * {
   width: 100%;
   text-align: left;
   order: 1;
-  width: 100%;
-  margin-bottom: 1px;
-  margin-right: 1px;
+  margin-bottom: 0;
+  margin-top: 0;
+  align-content: center;
 }
 
 .footer-contacto-admin img {
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .footer-creds {
@@ -346,6 +346,11 @@ html * {
 
 .footer-creds p {
   font-size: 12px;
+}
+
+.whatsapp-button {
+  padding-right: 10px;
+  align-content: center;
 }
 
 @media screen and (max-width: 425px) {
@@ -364,6 +369,11 @@ html * {
   .footer-contacto-admin img {
     height: 15vh;
     width: 22vh;
+  }
+
+  .flecha img {
+    height: 11vh;
+    width: 10vh;
   }
 
   .footer-contacto-planta {
@@ -410,6 +420,13 @@ html * {
     text-align: center;
     padding-right: 0;
   }
+  .banner-empresa {
+    height: 30vh;
+  }
+  .intro-banner-empresa {
+    top: 15%;
+  }
+
   .presentacion {
     flex-direction: column;
     margin-left: 0;

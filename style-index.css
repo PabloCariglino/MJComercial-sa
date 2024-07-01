@@ -149,7 +149,7 @@ p {
   /* overflow: hidden; */
   height: 490px;
   margin-top: 60px;
-  margin-bottom: 165px;
+  margin-bottom: 150px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
@@ -227,13 +227,13 @@ p {
 
 .separador-servicios {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 19px;
   font-family: CeraPro, sans-serif;
 }
 
 .separador-servicios h2 {
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 40px;
   font-family: CeraPro, sans-serif;
 }
@@ -482,9 +482,9 @@ p {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 0px 8vw;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 0px 6vw;
+  padding-top: 22px;
+  padding-bottom: 22px;
   background-color: #333;
   color: #fff;
 }
@@ -511,13 +511,13 @@ p {
   width: 100%;
   text-align: left;
   order: 1;
-  width: 100%;
-  margin-bottom: 1px;
-  margin-right: 1px;
+  margin-bottom: 0;
+  margin-top: 0;
+  align-content: center;
 }
 
 .footer-contacto-admin img {
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .footer-creds {
@@ -530,6 +530,11 @@ p {
 
 .footer-creds p {
   font-size: 12px;
+}
+
+.whatsapp-button {
+  padding-right: 10px;
+  align-content: center;
 }
 
 @media screen and (max-width: 425px) {
@@ -548,6 +553,11 @@ p {
   .footer-contacto-admin img {
     height: 15vh;
     width: 22vh;
+  }
+
+  .flecha img {
+    height: 11vh;
+    width: 10vh;
   }
 
   .footer-contacto-planta {
@@ -581,21 +591,21 @@ p {
     bottom: -80%;
   }
   .carousel-caption h1 {
-    font-size: 25px; /* Ajusta el tamaño según tus necesidades */
+    font-size: 40px; /* Ajusta el tamaño según tus necesidades */
   }
 
   .carousel-caption p {
-    font-size: 2vh; /* Ajusta el tamaño según tus necesidades */
+    font-size: 3vh; /* Ajusta el tamaño según tus necesidades */
   }
   .carousel-caption {
-    bottom: 40%;
+    bottom: 24%;
   }
 }
 
 @media (max-width: 768px) {
-  html * {
+  /* html * {
     font-size: 1.1rem;
-  }
+  } */
   .navbar .container-fluid {
     flex-direction: column;
   }
@@ -617,7 +627,7 @@ p {
     display: none;
   }
   .carousel-caption h1 {
-    font-size: 3vh;
+    font-size: 5vh;
     padding-top: 30px;
   }
   .carousel-caption p {
@@ -625,19 +635,20 @@ p {
     display: none;
   }
   .carousel-caption {
-    bottom: 40%;
+    bottom: 30%;
     display: block;
   }
   .nosotros-section {
     flex-direction: column;
+    margin-bottom: 100px;
   }
   .nosotros-section-left {
     padding-left: 0px;
   }
   .nosotros-section-right {
-    width: 100%;
+    width: 74%;
     padding-top: 20px;
-    padding-left: 0px;
+    padding-left: 20px;
     padding-right: 0px;
   }
   .container-datos-magnitud {
@@ -651,6 +662,10 @@ p {
   }
   .iconos-servicios {
     flex-wrap: wrap;
+    padding-top: 60px;
+  }
+  .servicios {
+    margin-top: 0px;
   }
   .card {
     flex-direction: column;
@@ -675,5 +690,9 @@ p {
 @media (max-width: 426px) {
   .nosotros-section {
     padding: 5px 30px;
+  }
+  .carousel-caption h1 {
+    font-size: 4vh;
+    padding-top: 28px;
   }
 }
